@@ -24,7 +24,7 @@ import Horizontal from './UniqueHorizontal.vue'
   </div>
 
   <Quote
-    compQuote="<strong>Ne laissez plus</strong> vos nuits au hasard. Osez rêver grand. Repoussez les frontières de l'imaginaire, et transformez vos nuits en une expérience unique."
+    compQuote="Ne laissez plus vos nuits au hasard. Osez rêver grand.<br/> <strong>Repoussez les frontières de l'imaginaire</strong>, et transformez vos nuits en une <strong>expérience unique</strong>."
   />
 
   <div class="container">
