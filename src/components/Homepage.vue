@@ -1,7 +1,7 @@
 <script setup>
 import Quote from './CompQuote.vue'
 import LineLayout from './CompLineLayout.vue'
-import BaseButton from './CompButton.vue'
+import ButtonBase from './CompButton.vue'
 import Explore from './UniqueExplore.vue'
 import Horizontal from './UniqueHorizontal.vue'
 </script>
@@ -38,7 +38,7 @@ import Horizontal from './UniqueHorizontal.vue'
     />
     <div class="row">
       <div class="col-lg-6 offset-lg-6">
-        <BaseButton compButton="En savoir plus" />
+        <ButtonBase compButton="En savoir plus" />
       </div>
     </div>
   </div>
@@ -84,7 +84,7 @@ import Horizontal from './UniqueHorizontal.vue'
         <h4>Commandez votre implant dès aujourd’hui et prenez le contrôle de vos rêves.</h4>
       </div>
       <div class="col-lg-4">
-        <BaseButton compButton="En savoir plus" />
+        <ButtonBase compButton="En savoir plus" />
       </div>
     </div>
   </div>
