@@ -1,6 +1,6 @@
-<script>
+<script setup>
 defineProps({
-  greetingMessage: String,
+  compQuote: String,
 })
 </script>
 
@@ -8,7 +8,7 @@ defineProps({
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
-        <h3>{{ quote }}</h3>
+        <h3 v-html="compQuote"></h3>
       </div>
     </div>
   </div>

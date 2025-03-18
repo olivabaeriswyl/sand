@@ -1,5 +1,6 @@
 <script setup>
 import Homepage from './components/Homepage.vue'
+import Button from './components/CompButton.vue'
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import Homepage from './components/Homepage.vue'
   </header>
 
   <main>
+    <Button compButton="En savoir plus" />
     <Homepage />
   </main>
 

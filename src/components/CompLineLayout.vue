@@ -1,16 +1,17 @@
-<script>
+<script setup>
 defineProps({
-  greetingMessage: String,
+  compTitle: String,
+  compText: String,
 })
 </script>
 
 <template>
   <div class="row">
     <div class="col-lg-6">
-      <h3>{{ h3 }}</h3>
+      <h3>{{ compTitle }}</h3>
     </div>
     <div class="col-lg-6">
-      <p>{{ text }}</p>
+      <p>{{ compText }}</p>
     </div>
   </div>
 </template>
