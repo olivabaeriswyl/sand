@@ -1,6 +1,22 @@
 <script setup>
+import { ref, computed } from 'vue'
 import Homepage from './components/Homepage.vue'
-import Button from './components/CompButton.vue'
+import Products from './components/PageProducts.vue'
+
+const routes = {
+  '/': Homepage,
+  '/products': Products,
+}
+
+const currentPath = ref(window.location.hash)
+
+window.addEventListener('hashchange', () => {
+  currentPath.value = window.location.hash
+})
+
+const currentView = computed(() => {
+  return routes[currentPath.value.slice(1) || '/'] || NotFound
+})
 </script>
 
 <template>
@@ -8,26 +24,28 @@ import Button from './components/CompButton.vue'
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <img src="#" alt="SAND" />
+          <a href="#">
+            <img src="#" alt="SAND" />
+          </a>
         </div>
         <div class="col-lg-7">
-          <div>
-            <a href="#">La technologie</a>
-            <a href="#">Produits et Services</a>
-            <a href="#">Espaces de rêve</a>
-            <a href="#">À Propos</a>
-          </div>
-          <a href="#">Espace Client</a>
-          <a href="#">Devenir Mécène</a>
+          <nav>
+            <div>
+              <a href="#">La technologie</a>
+              <a href="#/products">Produits et Services</a>
+              <a href="#">Espaces de rêve</a>
+              <a href="#">À Propos</a>
+            </div>
+            <a href="#">Espace Client</a>
+            <a href="#">Devenir Mécène</a>
+          </nav>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <Button compButton="En savoir plus" />
-    <Homepage />
-  </main>
+  <component :is="currentView" />
+  <main></main>
 
   <footer>
     <div class="container">
@@ -53,7 +71,7 @@ import Button from './components/CompButton.vue'
           <div>
             <p><strong>Explorer</strong></p>
             <a href="#">La technologie</a>
-            <a href="#">Produits et Services</a>
+            <a href="#/products">Produits et Services</a>
             <a href="#">Espaces de rêve</a>
             <a href="#">À Propos</a>
           </div>
