@@ -1,11 +1,14 @@
 <script setup>
 import { ref, computed } from 'vue'
+import NotFound from './components/PageNotFound.vue'
 import Homepage from './components/Homepage.vue'
 import Products from './components/PageProducts.vue'
+import Technology from './components/PageTechnology.vue'
 
 const routes = {
   '/': Homepage,
   '/products': Products,
+  '/technology': Technology,
 }
 
 const currentPath = ref(window.location.hash)
@@ -24,20 +27,20 @@ const currentView = computed(() => {
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
-          <a href="#">
+          <a href="#" id="logo">
             <img src="#" alt="SAND" />
           </a>
         </div>
         <div class="col-lg-7">
           <nav>
             <div>
-              <a href="#">La technologie</a>
+              <a href="#/technology">La technologie</a>
               <a href="#/products">Produits et Services</a>
               <a href="#">Espaces de rêve</a>
               <a href="#">À Propos</a>
             </div>
-            <a href="#">Espace Client</a>
-            <a href="#">Devenir Mécène</a>
+            <a href="#/client">Espace Client</a>
+            <a href="#/sponsor">Devenir Mécène</a>
           </nav>
         </div>
       </div>
@@ -70,22 +73,24 @@ const currentView = computed(() => {
         <div class="col-lg-2">
           <div>
             <p><strong>Explorer</strong></p>
-            <a href="#">La technologie</a>
+            <a href="#/technology">La technologie</a>
             <a href="#/products">Produits et Services</a>
             <a href="#">Espaces de rêve</a>
             <a href="#">À Propos</a>
           </div>
           <div>
             <p><strong>Compte</strong></p>
-            <a href="#">Espace Client</a>
+            <a href="#/client">Espace Client</a>
           </div>
           <div>
             <p><strong>Donation</strong></p>
-            <a href="#">Devenir Mécène</a>
+            <a href="#/sponsor">Devenir Mécène</a>
           </div>
         </div>
         <div class="col-lg-1">
-          <img src="#" alt="^" />
+          <a href="#logo">
+            <img src="#" alt="^" />
+          </a>
         </div>
       </div>
     </div>
