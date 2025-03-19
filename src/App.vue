@@ -4,12 +4,14 @@ import NotFound from './components/PageNotFound.vue'
 import Homepage from './components/Homepage.vue'
 import Products from './components/PageProducts.vue'
 import Technology from './components/PageTechnology.vue'
+import Map from './components/PageMap.vue'
 import About from './components/PageAbout.vue'
 
 const routes = {
   '/': Homepage,
   '/products': Products,
   '/technology': Technology,
+  '/map': Map,
   '/about': About,
 }
 
@@ -38,7 +40,7 @@ const currentView = computed(() => {
             <div>
               <a href="#/technology">La technologie</a>
               <a href="#/products">Produits et Services</a>
-              <a href="#">Espaces de rêve</a>
+              <a href="#/map">Espaces de rêve</a>
               <a href="#/about">À Propos</a>
             </div>
             <a href="#/client">Espace Client</a>
@@ -77,7 +79,7 @@ const currentView = computed(() => {
             <p><strong>Explorer</strong></p>
             <a href="#/technology">La technologie</a>
             <a href="#/products">Produits et Services</a>
-            <a href="#">Espaces de rêve</a>
+            <a href="#/map">Espaces de rêve</a>
             <a href="#/about">À Propos</a>
           </div>
           <div>
