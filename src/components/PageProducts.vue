@@ -28,8 +28,8 @@ import Subscription from './UniqueSubscription.vue'
           <strong>Attention:</strong> vous devez avoir un implant en votre possession pour pouvoir
           profiter d’un abonnement
         </p>
-        <ButtonBase compButton="Commander l'implant" />
-        <ButtonVar compButton="En savoir plus" />
+        <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" />
+        <ButtonVar buttonLink="#/technology" compButton="En savoir plus" />
       </div>
     </div>
     <div class="row">
