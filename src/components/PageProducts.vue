@@ -1,6 +1,6 @@
 <script setup>
 import ButtonBase from './CompButton.vue'
-import ButtonVar from './CompButton.vue'
+import ButtonVar from './CompButtonVar.vue'
 import Subscription from './UniqueSubscription.vue'
 </script>
 
