@@ -12,11 +12,21 @@ defineProps({
 </template>
 
 <style scoped>
-/* a {
-  background: var(--color-salmon);
+a {
+  font-size: 1rem;
+  font-weight: 800;
   color: white;
   text-decoration: none;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-} */
+  background: var(--color-salmon);
+  padding: 10px 40px;
+  border: var(--color-salmon) solid 2px;
+  border-radius: 40px;
+  transition: all 0.4s;
+  display: inline-block;
+}
+
+a:hover {
+  color: var(--color-salmon);
+  background: white;
+}
 </style>

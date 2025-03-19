@@ -7,26 +7,26 @@
 body {
   font-family: 'area-normal', sans-serif;
   color: var(--color-black-blue);
-}
-
-a {
-  //  text-decoration: none;
+  margin: 0;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
 }
 
 p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.15px;
 }
