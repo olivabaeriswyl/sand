@@ -47,6 +47,7 @@ a {
   letter-spacing: -0.15px;
   text-decoration: none;
   transition: font-weight 0.2s;
+  text-shadow: 0 0 6px white;
 }
 
 #nav-gap {
