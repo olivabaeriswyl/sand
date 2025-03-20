@@ -24,5 +24,6 @@ import ButtonBase from './CompButton.vue'
   background-position: center;
   background-size: cover;
   padding: 160px 0;
+  margin-bottom: 120px;
 }
 </style>

@@ -19,7 +19,7 @@ import ButtonBase from './CompButton.vue'
         </p>
       </div>
       <div class="col-lg-6">
-        <img src="#" alt="Scientifique passionné" />
+        <img src="../img/about-scientist.png" alt="Scientifique passionné" id="img-scientist" />
       </div>
     </div>
   </div>
@@ -51,7 +51,11 @@ import ButtonBase from './CompButton.vue'
         <h3>Une leader visionnaire</h3>
       </div>
       <div class="col-lg-4">
-        <img src="#" alt="Photographie de la directrice, souriante" />
+        <img
+          src="../img/about-boss.png"
+          alt="Photographie de la directrice, souriante"
+          id="img-boss"
+        />
       </div>
       <div class="col-lg-4">
         <p>
@@ -59,10 +63,27 @@ import ButtonBase from './CompButton.vue'
           par la neurologie et les états de conscience, elle a rassemblé une équipe d’experts pour
           concrétiser cette vision : faire du rêve un terrain d'exploration accessible à tous.
         </p>
-        <ButtonBase compButton="Devenir mécène" />
+        <ButtonBase buttonLink="#/sponsor" compButton="Devenir mécène" />
       </div>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#img-boss {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  #img-boss {
+    width: 60%;
+    height: auto;
+  }
+}
+
+#img-scientist {
+  width: 60%;
+  height: auto;
+}
+</style>

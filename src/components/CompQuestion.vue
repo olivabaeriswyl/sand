@@ -12,4 +12,15 @@ defineProps({
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div {
+  background-image: url(../img/question-blue.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 180px 80px;
+  width: 470px;
+}
+
+/* url(../img/question-salmon.png) */
+</style>
