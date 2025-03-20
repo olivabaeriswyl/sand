@@ -12,15 +12,17 @@ import ButtonBase from './CompButton.vue'
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <img src="#" alt="Photographie de l'implant, rond" />
+      <div class="col-12 animation-implant">
+        <img src="../img/technology-implant.gif" alt="Animation de l'implant, rond" />
       </div>
     </div>
-    <LineLayout
-      compTitle="L'implant Neural SAND : une fusion de science et d'onirisme"
-      compText="L’implant SAND est un bijou de technologie avancée, conçu pour interagir en douceur avec votre activité cérébrale. Composé d’une micro-puce en bio-silicium, de neuro-capteurs quantiques et d’un réseau de stimulation synaptique, il module les fréquences cérébrales pour influencer les rêves."
-    />
-    <div class="row">
+    <div class="section-margin">
+      <LineLayout
+        compTitle="L'implant Neural SAND : une fusion de science et d'onirisme"
+        compText="L’implant SAND est un bijou de technologie avancée, conçu pour interagir en douceur avec votre activité cérébrale. Composé d’une micro-puce en bio-silicium, de neuro-capteurs quantiques et d’un réseau de stimulation synaptique, il module les fréquences cérébrales pour influencer les rêves."
+      />
+    </div>
+    <div class="row section-margin">
       <div class="col-12">
         <h3>Un fonctionnement naturel et intelligent</h3>
       </div>
@@ -39,7 +41,8 @@ import ButtonBase from './CompButton.vue'
       </div>
       <div class="col-lg-8">
         <img
-          src="#"
+          id="schema-img"
+          src="../img/technology-schema.png"
           alt="schéma 1 Analyse du cycle du sommeil, 2 Connexion sécurisée au serveur onirique, 3 Téléchargement du scénario séléctionné, 4 Intégration progressive dans l'activité cognitive, 5 Expérience immersive et fluide"
         />
       </div>
@@ -51,7 +54,7 @@ import ButtonBase from './CompButton.vue'
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
-        <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" class="button-base" />
+        <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" id="button-base" />
       </div>
     </div>
   </div>
@@ -73,7 +76,26 @@ import ButtonBase from './CompButton.vue'
 </template>
 
 <style scoped>
-.button-base {
-  margin-top: -140px;
+.section-margin {
+  margin-bottom: 120px;
+}
+
+#button-base {
+  margin-top: -260px;
+}
+
+.animation-implant {
+  display: flex;
+  justify-content: center;
+}
+
+.animation-implant img {
+  width: auto;
+  height: 460px;
+}
+
+#schema-img {
+  width: 100%;
+  height: auto;
 }
 </style>

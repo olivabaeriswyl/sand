@@ -23,7 +23,9 @@ import ButtonBase from './CompButton.vue'
       </div>
     </div>
   </div>
-  <Values />
+  <div id="ani-values-background">
+    <Values />
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -107,5 +109,12 @@ import ButtonBase from './CompButton.vue'
 
 #question-two {
   margin-top: 200px;
+}
+
+#ani-values-background {
+  background-image: url(../img/values-background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
 }
 </style>
