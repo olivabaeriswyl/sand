@@ -1,11 +1,15 @@
-<script setup></script>
+<script setup>
+import { ref, provide } from 'vue'
+const logoButton = ref(null)
+provide('logoButton', logoButton)
+</script>
 
 <template>
   <header>
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <a href="#" id="logo">
+          <a href="#" id="logo" ref="logoButton">
             <img src="../img/logo-sand.svg" alt="SAND" />
           </a>
         </div>

@@ -27,18 +27,26 @@ import ButtonBase from './CompButton.vue'
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <Question
-          question="Pourquoi certains rêves paraissent-ils si réels ?"
-          answer="Cela peut être dû à l'intensité des émotions vécues durant le rêve, ou à la ressemblance avec des expériences réelles. Le cerveau active les mêmes zones que celles utilisées pendant les expériences vécues."
-        />
-        <Question
-          question="Qu’est-ce qu’un rêve lucide et comment se produit-il ?"
-          answer="Un rêve lucide est un rêve où le rêveur prend conscience qu'il rêve et peut parfois contrôler le rêve. Cela survient quand le cerveau reconnaît les incohérences ou les signes d'un rêve."
-        />
-        <Question
-          question="Comment les chercheurs ont-ils découvert une technologie liée ?"
-          answer="Nos équipes se sont basées sur les avancées en neurosciences et en interfaces cerveau-machine pour développer un implant capable d’interagir avec les cycles du sommeil. Des études approfondies sur les états modifiés de conscience et l’activité cérébrale nocturne ont permis d’identifier les moments idéaux pour insérer un scénario onirique personnalisé."
-        />
+        <div class="question-parent">
+          <div id="question-one">
+            <Question
+              question="Pourquoi certains rêves paraissent-ils si réels ?"
+              answer="Cela peut être dû à l'intensité des émotions vécues durant le rêve, ou à la ressemblance avec des expériences réelles. Le cerveau active les mêmes zones que celles utilisées pendant les expériences vécues."
+            />
+          </div>
+          <div id="question-two">
+            <Question
+              question="Qu’est-ce qu’un rêve lucide et comment se produit-il ?"
+              answer="Un rêve lucide est un rêve où le rêveur prend conscience qu'il rêve et peut parfois contrôler le rêve. Cela survient quand le cerveau reconnaît les incohérences ou les signes d'un rêve."
+            />
+          </div>
+        </div>
+        <div id="question-three">
+          <Question
+            question="Comment les chercheurs ont-ils découvert une technologie liée ?"
+            answer="Nos équipes se sont basées sur les avancées en neurosciences et en interfaces cerveau-machine pour développer un implant capable d’interagir avec les cycles du sommeil. Des études approfondies sur les états modifiés de conscience et l’activité cérébrale nocturne ont permis d’identifier les moments idéaux pour insérer un scénario onirique personnalisé."
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -85,5 +93,19 @@ import ButtonBase from './CompButton.vue'
 #img-scientist {
   width: 60%;
   height: auto;
+}
+
+.question-parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+#question-three {
+  margin-top: -200px;
+  margin-left: 200px;
+}
+
+#question-two {
+  margin-top: 200px;
 }
 </style>

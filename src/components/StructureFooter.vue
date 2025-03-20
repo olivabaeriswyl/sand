@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import { inject } from 'vue'
+const logoButton = inject('logoButton')
+const scrollToTop = () => {
+  if (logoButton?.value) {
+    logoButton.value.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+</script>
 
 <template>
   <footer>
@@ -39,9 +47,9 @@
           </div>
         </div>
         <div class="col-lg-1">
-          <a href="#logo">
+          <button @click="scrollToTop">
             <img src="../img/arrow.svg" alt="^" />
-          </a>
+          </button>
         </div>
       </div>
     </div>

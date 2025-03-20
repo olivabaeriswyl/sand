@@ -26,6 +26,8 @@
 <style scoped>
 .structure {
   display: flex;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .box {

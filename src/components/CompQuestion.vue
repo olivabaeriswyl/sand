@@ -6,21 +6,51 @@ defineProps({
 </script>
 
 <template>
-  <div>
-    <h4>{{ question }}</h4>
-    <p>{{ answer }}</p>
+  <div id="group">
+    <div id="question">
+      <h4>{{ question }}</h4>
+    </div>
+    <div id="answer">
+      <p>{{ answer }}</p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-div {
+#question {
   background-image: url(../img/question-blue.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 180px 80px;
-  width: 470px;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
 }
 
-/* url(../img/question-salmon.png) */
+#answer {
+  background-image: url(../img/question-salmon.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 220px 40px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#group {
+  width: 470px;
+  height: auto;
+  position: relative;
+}
+
+#group:hover #question {
+  opacity: 0;
+}
+
+#group:hover #answer {
+  opacity: 1;
+}
 </style>
