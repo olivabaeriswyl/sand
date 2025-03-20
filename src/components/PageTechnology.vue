@@ -48,7 +48,13 @@ import ButtonBase from './CompButton.vue'
   <Quote
     compQuote="Laissez-vous guider par SAND et plongez dans un univers où vos nuits deviennent des aventures inoubliables."
   />
-  <ButtonBase compButton="Commander l'implant" />
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" class="button-base" />
+      </div>
+    </div>
+  </div>
   <div class="container">
     <LineLayout
       compTitle="Simplicité et confort d’utilisation"
@@ -66,4 +72,8 @@ import ButtonBase from './CompButton.vue'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.button-base {
+  margin-top: -140px;
+}
+</style>

@@ -52,7 +52,7 @@
 footer {
   padding: 300px 0 80px;
   background-image: url(../img/footer-background-white.png), url(../img/footer-background.png);
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
 }
 

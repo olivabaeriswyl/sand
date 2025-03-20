@@ -2,6 +2,8 @@
 defineProps({
   compQuote: String,
 })
+
+import ButtonBase from './CompButton.vue'
 </script>
 
 <template>
@@ -16,4 +18,11 @@ defineProps({
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#quote-background {
+  background-image: url(../img/quote-background-white.png), url(../img/quote-background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 160px 0;
+}
+</style>
