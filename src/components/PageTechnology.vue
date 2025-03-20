@@ -41,7 +41,7 @@ import ButtonBase from './CompButton.vue'
       </div>
       <div class="col-lg-8">
         <img
-          id="schema-img"
+          class="schema-img"
           src="../img/technology-schema.png"
           alt="schéma 1 Analyse du cycle du sommeil, 2 Connexion sécurisée au serveur onirique, 3 Téléchargement du scénario séléctionné, 4 Intégration progressive dans l'activité cognitive, 5 Expérience immersive et fluide"
         />
@@ -65,7 +65,11 @@ import ButtonBase from './CompButton.vue'
     />
     <div class="row">
       <div class="col-lg-4 offset-lg-6">
-        <img src="#" alt="Implant posé à la base de la nuque" />
+        <img
+          class="schema-img section-margin"
+          src="../img/technology-person.gif"
+          alt="Implant posé à la base de la nuque"
+        />
       </div>
     </div>
     <LineLayout
@@ -94,7 +98,7 @@ import ButtonBase from './CompButton.vue'
   height: 460px;
 }
 
-#schema-img {
+.schema-img {
   width: 100%;
   height: auto;
 }

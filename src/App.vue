@@ -29,13 +29,15 @@ const currentView = computed(() => {
 </script>
 
 <template>
-  <StructureHeader />
+  <div :class="[currentPath == '#/technology' || currentPath == '#/about' ? 'blue' : 'salmon']">
+    <StructureHeader />
 
-  <main>
-    <component :is="currentView" />
-  </main>
+    <main>
+      <component :is="currentView" />
+    </main>
 
-  <StructureFooter />
+    <StructureFooter />
+  </div>
 </template>
 
 <style scoped></style>

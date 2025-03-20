@@ -16,7 +16,7 @@ import Subscription from './UniqueSubscription.vue'
         <h3>L'implant Neural SAND</h3>
       </div>
       <div class="col-lg-3">
-        <img src="#" alt="Photographie de l'implant" />
+        <img id="implant-size" src="../img/products-implant.png" alt="Photographie de l'implant" />
       </div>
       <div class="col-lg-6">
         <p>
@@ -24,11 +24,13 @@ import Subscription from './UniqueSubscription.vue'
           impliquées dans le rêve pour une immersion totale. Il est conçu pour offrir une expérience
           stable et personnalisée.
         </p>
-        <p>
+        <p id="implant-text-margin">
           <strong>Attention:</strong> vous devez avoir un implant en votre possession pour pouvoir
           profiter d’un abonnement
         </p>
-        <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" />
+        <div>
+          <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" />
+        </div>
         <ButtonVar buttonLink="#/technology" compButton="En savoir plus" />
       </div>
     </div>
@@ -102,4 +104,13 @@ import Subscription from './UniqueSubscription.vue'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#implant-size {
+  width: 80%;
+  height: auto;
+}
+
+#implant-text-margin {
+  margin-top: 200px 0 60px;
+}
+</style>

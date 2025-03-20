@@ -40,6 +40,10 @@ header {
   background-size: cover;
 }
 
+.blue header {
+  background-image: url(../img/header-white-background.png), url(../img/footer-background.png);
+}
+
 img {
   width: 180px;
 }

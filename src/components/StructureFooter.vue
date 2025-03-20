@@ -64,6 +64,10 @@ footer {
   background-size: cover;
 }
 
+.blue footer {
+  background-image: url(../img/footer-background-white.png), url(../img/footer-background-blue.png);
+}
+
 #footer-logo {
   width: 180px;
 }
