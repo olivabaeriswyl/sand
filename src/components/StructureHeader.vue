@@ -41,7 +41,7 @@ header {
 }
 
 .blue header {
-  background-image: url(../img/header-white-background.png), url(../img/footer-background.png);
+  background-image: url(../img/header-white-background.png), url(../img/header-background-blue.png);
 }
 
 img {
