@@ -5,42 +5,42 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <img src="../img/logo-sand.svg" alt="SAND" />
-          <p>© 2036 SAND. Tous droits réservés.</p>
+          <img id="footer-logo" src="../img/logo-sand.svg" alt="SAND" />
+          <p id="footer-rights">© 2036 SAND. Tous droits réservés.</p>
         </div>
         <div class="col-lg-3">
           <div>
-            <p><strong>Compagnie</strong></p>
+            <p class="title"><strong>Compagnie</strong></p>
             <a href="#/news">Actualités</a>
             <a href="#/contact">Contact</a>
             <a href="#/legal">Mentions légales</a>
           </div>
           <div>
-            <p><strong>Suivez nous</strong></p>
+            <p class="title title-margin"><strong>Suivez nous</strong></p>
             <a href="https://www.instagram.com/" target="_blank">Instagram</a>
             <a href="#" target="_blank">Zao Technology</a>
           </div>
         </div>
         <div class="col-lg-2">
           <div>
-            <p><strong>Explorer</strong></p>
+            <p class="title"><strong>Explorer</strong></p>
             <a href="#/technology">La technologie</a>
             <a href="#/products">Produits et Services</a>
             <a href="#/map">Espaces de rêve</a>
             <a href="#/about">À Propos</a>
           </div>
           <div>
-            <p><strong>Compte</strong></p>
+            <p class="title title-margin"><strong>Compte</strong></p>
             <a href="#/client">Espace Client</a>
           </div>
           <div>
-            <p><strong>Donation</strong></p>
+            <p class="title title-margin"><strong>Donation</strong></p>
             <a href="#/sponsor">Devenir Mécène</a>
           </div>
         </div>
         <div class="col-lg-1">
           <a href="#logo">
-            <img src="#" alt="^" />
+            <img src="../img/arrow.svg" alt="^" />
           </a>
         </div>
       </div>
@@ -56,8 +56,12 @@ footer {
   background-size: cover;
 }
 
-img {
+#footer-logo {
   width: 180px;
+}
+
+#footer-rights {
+  margin: 0;
 }
 
 a {
@@ -68,6 +72,7 @@ a {
   text-decoration: none;
   transition: font-weight 0.2s;
   display: block;
+  margin-bottom: 10px;
 }
 
 a:hover {
@@ -77,5 +82,13 @@ a:hover {
 a,
 p {
   text-shadow: 0 0 6px white;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.title-margin {
+  margin-top: 40px;
 }
 </style>

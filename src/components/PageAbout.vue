@@ -64,3 +64,5 @@ import ButtonBase from './CompButton.vue'
     </div>
   </div>
 </template>
+
+<style scoped></style>

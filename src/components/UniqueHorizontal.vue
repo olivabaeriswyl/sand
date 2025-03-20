@@ -33,3 +33,5 @@ import BaseButton from './CompButton.vue'
     </div>
   </div>
 </template>
+
+<style scoped></style>

@@ -1,12 +1,13 @@
 <script setup>
 defineProps({
   compButton: String,
+  buttonLink: String,
 })
 </script>
 
 <template>
   <div>
-    <a href="#">{{ compButton }}</a>
+    <a :href="buttonLink">{{ compButton }}</a>
   </div>
 </template>
 

@@ -11,3 +11,5 @@ defineProps({
     <p>{{ answer }}</p>
   </div>
 </template>
+
+<style scoped></style>

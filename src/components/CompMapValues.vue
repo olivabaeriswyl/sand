@@ -13,3 +13,5 @@ defineProps({
     <p>{{ mapText }}</p>
   </div>
 </template>
+
+<style scoped></style>

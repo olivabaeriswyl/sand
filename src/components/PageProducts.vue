@@ -74,8 +74,8 @@ import Subscription from './UniqueSubscription.vue'
         subscribePrice="10.-"
       />
       <div class="col-lg-6 offset-lg-6">
-        <ButtonBase compButton="Définir un abonnement" />
-        <ButtonVar compButton="En savoir plus" />
+        <ButtonBase buttonLink="#/subscribe" compButton="Définir un abonnement" />
+        <ButtonVar buttonLink="#/map" compButton="En savoir plus" />
       </div>
     </div>
     <div class="row">
@@ -86,7 +86,7 @@ import Subscription from './UniqueSubscription.vue'
           clics : choix du scénario, du lieu et des personnages.
         </p>
         <h4>Téléchargez dès maintenant l’application SAND et prenez le contrôle de vos nuits.</h4>
-        <ButtonBase compButton="Téléchargez l'application" />
+        <ButtonBase buttonLink="#/technology" compButton="Téléchargez l'application" />
       </div>
     </div>
     <div class="row">
@@ -96,8 +96,10 @@ import Subscription from './UniqueSubscription.vue'
           Votre implant a besoin d’une mise à jour ou a subi des dommages ? Notre équipe d’experts
           est disponible pour assurer son bon fonctionnement et prolonger sa durabilité.
         </p>
-        <ButtonBase compButton="Contacter le service" />
+        <ButtonBase buttonLink="#/service" compButton="Contacter le service" />
       </div>
     </div>
   </div>
 </template>
+
+<style scoped></style>
