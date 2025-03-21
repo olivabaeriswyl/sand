@@ -104,21 +104,24 @@ import MapPinVar from './CompMapPinVar.vue'
 
   <div class="structure">
     <div class="box box-personal">
-      <div>
+      <div class="box-personal-map">
         <h2>Espace Personnel : vos rêves, votre univers</h2>
         <div>
           <MapPinVar
             mapText="Grâce à l’implant SAND et à notre application intuitive, vous pouvez programmer vos rêves avant de sombrer dans le sommeil."
+            icone="map-icone-castle.png"
           />
           <MapPin
             mapText="Définissez vos préférences : choisissez votre décor, les personnages qui vous accompagnent et le scénario que vous souhaitez vivre à l’avance."
+            icone="map-icone-licorn.png"
           />
           <MapPin
             mapText="L’expérience reste immersive : une fois endormi, tout se déroule comme un rêve naturel, et vous pouvez ou non prendre conscience que vous rêvez."
+            icone="map-icone-dragon.png"
           />
         </div>
       </div>
-      <div>
+      <div class="box-value">
         <MapValues
           mapValue="Personnalisation totale"
           mapText="Choisissez votre monde, vos personnages, vos actions."
@@ -135,21 +138,24 @@ import MapPinVar from './CompMapPinVar.vue'
     </div>
 
     <div class="box box-city">
-      <div>
+      <div class="box-city-map">
         <h2>La Cité des Rêves : un monde collectif et évolutif</h2>
         <div>
           <MapPinVar
             mapText="La Cité des Rêves est un espace partagé où les songes des utilisateurs se mêlent et évoluent en fonction d’un scénario de base programmé par défaut."
+            icone="map-icone-chest.png"
           />
           <MapPin
             mapText="Grâce à la Neurosphère, les implants se synchronisent pour permettre une immersion collective fluide et naturelle."
+            icone="map-icone-trolls.png"
           />
           <MapPin
             mapText="Chaque rêve influence la structure et l’ambiance de la cité, la rendant dynamique et en perpétuelle transformation. Ce monde onirique évolue donc constamment selon les interactions et les créations de ses habitants."
+            icone="map-icone-tower.png"
           />
         </div>
       </div>
-      <div>
+      <div class="box-value">
         <MapValues
           mapValue="Un espace collectif"
           mapText="Les utilisateurs connectés à la neurosphère fusionnent leurs rêves pour créer un univers unique."
@@ -168,11 +174,50 @@ import MapPinVar from './CompMapPinVar.vue'
 </template>
 
 <style scoped>
+.structure {
+  display: flex;
+}
+
+.box {
+  padding: 40px 10px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: flex-grow 0.3s ease-in-out;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.box:hover {
+  flex-grow: 3;
+}
+
 .box-personal {
   background-color: var(--color-salmon);
 }
 
+.box-personal-map {
+  display: flex;
+}
+
 .box-city {
   background-color: var(--color-light-blue);
+}
+
+.box-city-map {
+  display: flex;
+}
+
+.box-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Animation */
+.structure:hover h2 {
+  font-size: 36px;
 }
 </style>

@@ -10,8 +10,16 @@ defineProps({
     <p>
       <strong>{{ mapValue }}</strong>
     </p>
-    <p>{{ mapText }}</p>
+    <p id="text">{{ mapText }}</p>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div #text {
+  opacity: 0;
+}
+
+div:hover #text {
+  opacity: 1;
+}
+</style>
