@@ -9,16 +9,17 @@ import Horizontal from './UniqueHorizontal.vue'
 <template>
   <div class="container">
     <div class="row">
+      <img id="sandman" src="../../public/img/home-sandman.png" alt="" />
       <div class="col-lg-10 offset-lg-1">
-        <img src="#" alt="SAND" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-5 offset-lg-1">
-        <h3>Imaginez vos nuits,</h3>
-      </div>
-      <div class="col-lg-5">
-        <h3>Réinventez votre monde.</h3>
+        <img class="img-inside" src="../../public/img/logo-big.svg" alt="SAND" />
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Imaginez vos nuits,</h3>
+          </div>
+          <div class="col-lg-6">
+            <h3 id="slogan-right">Réinventez votre monde.</h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -90,4 +91,18 @@ import Horizontal from './UniqueHorizontal.vue'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#sandman {
+  height: 100%;
+  width: 100%;
+}
+
+.img-inside {
+  width: 100%;
+  height: 100%;
+}
+
+#slogan-right {
+  text-align: end;
+}
+</style>
