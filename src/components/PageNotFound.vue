@@ -38,6 +38,9 @@
 img {
   position: absolute;
   right: 100px;
+  width: 78px;
+  height: auto;
+  rotate: -15deg;
 }
 
 /*
