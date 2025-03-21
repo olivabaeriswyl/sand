@@ -26,4 +26,8 @@ import ButtonBase from './CompButton.vue'
   padding: 160px 0;
   margin-bottom: 120px;
 }
+
+.blue #quote-background {
+  background-image: url(../img/quote-background-white.png), url(../img/quote-background-blue.png);
+}
 </style>

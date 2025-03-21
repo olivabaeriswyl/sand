@@ -1,7 +1,7 @@
 <script setup>
-import { ref, provide } from 'vue'
-const logoButton = ref(null)
-provide('logoButton', logoButton)
+// import { ref, provide } from 'vue'
+// const logoButton = ref(null)
+// provide('logoButton', logoButton)
 </script>
 
 <template>

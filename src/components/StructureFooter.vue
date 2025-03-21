@@ -1,11 +1,11 @@
 <script setup>
-import { inject } from 'vue'
-const logoButton = inject('logoButton')
-const scrollToTop = () => {
-  if (logoButton?.value) {
-    logoButton.value.scrollIntoView({ behavior: 'smooth' })
-  }
-}
+// import { inject } from 'vue'
+// const logoButton = inject('logoButton')
+// const scrollToTop = () => {
+//   if (logoButton?.value) {
+//     logoButton.value.scrollIntoView({ behavior: 'smooth' })
+//   }
+// }
 </script>
 
 <template>

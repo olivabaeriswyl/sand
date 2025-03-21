@@ -11,7 +11,7 @@ import Subscription from './UniqueSubscription.vue'
         <h2>Nos produits et services</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row section-margin">
       <div class="col-lg-3">
         <h3>L'implant Neural SAND</h3>
       </div>
@@ -28,13 +28,13 @@ import Subscription from './UniqueSubscription.vue'
           <strong>Attention:</strong> vous devez avoir un implant en votre possession pour pouvoir
           profiter d’un abonnement
         </p>
-        <div>
+        <div class="button-place">
           <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" />
+          <ButtonVar buttonLink="#/technology" compButton="En savoir plus" />
         </div>
-        <ButtonVar buttonLink="#/technology" compButton="En savoir plus" />
       </div>
     </div>
-    <div class="row">
+    <div class="row section-margin">
       <div class="col-12">
         <h3>Nos abonnements</h3>
       </div>
@@ -47,6 +47,8 @@ import Subscription from './UniqueSubscription.vue'
         subscribeSubtitleTwo="Explorateur"
         subscribeInfoTwo="10 rêves par mois"
         subscribePriceTwo="60.-/mois"
+        card="card-color"
+        cardTwo="card-color"
       />
       <Subscription
         subscribeTitle="Cité des rêves"
@@ -57,6 +59,8 @@ import Subscription from './UniqueSubscription.vue'
         subscribeSubtitleTwo="Explorateur"
         subscribeInfoTwo="10 explorations par mois"
         subscribePriceTwo="60.-/mois"
+        card="card-color"
+        cardTwo="card-color"
       />
       <Subscription
         subscribeTitle="Créateur"
@@ -67,6 +71,8 @@ import Subscription from './UniqueSubscription.vue'
         subscribeSubtitleTwo="Explorateur"
         subscribeInfoTwo="10 rêves et 10 explorations par mois"
         subscribePriceTwo="110.-/mois"
+        card="card-color"
+        cardTwo="card-color"
       />
       <Subscription
         subscribeTitle="Rêve unique"
@@ -74,8 +80,9 @@ import Subscription from './UniqueSubscription.vue'
         subscribeSubtitle="Test"
         subscribeInfo="1 rêve ou 1 exploration"
         subscribePrice="10.-"
+        card="card-color"
       />
-      <div class="col-lg-6 offset-lg-6">
+      <div class="col-lg-6 offset-lg-6 button-place" id="button-place-margin">
         <ButtonBase buttonLink="#/subscribe" compButton="Définir un abonnement" />
         <ButtonVar buttonLink="#/map" compButton="En savoir plus" />
       </div>
@@ -112,5 +119,18 @@ import Subscription from './UniqueSubscription.vue'
 
 #implant-text-margin {
   margin-top: 200px 0 60px;
+}
+
+.button-place {
+  display: flex;
+  justify-content: space-between;
+}
+
+#button-place-margin {
+  margin-top: 40px;
+}
+
+.section-margin {
+  margin-bottom: 180px;
 }
 </style>
