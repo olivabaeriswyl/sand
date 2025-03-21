@@ -2,8 +2,8 @@
 
 <template>
   <div id="background-parent">
-    <img src="../img/map-icone-licorn.png" alt="" />
-    <!-- <img src="../img/error-background.png" alt="" /> -->
+    <img src="../../public/img/map-icone-licorn.png" alt="" />
+    <!-- <img src="../../public/img/error-background.png" alt="" /> -->
     <div class="container">
       <div class="row">
         <div class="col-12" id="direction">
@@ -45,7 +45,7 @@ img {
 
 /*
 #background {
-  background-image: url(../img/error-background-white.png), url(../img/error-background.png);
+  background-image: url(../../public/img/error-background-white.png), url(../../public/img/error-background.png);
   background-position: center;
   background-size: cover;
 }

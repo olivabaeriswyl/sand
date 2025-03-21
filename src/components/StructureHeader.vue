@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-lg-6">
           <a href="#" id="logo" ref="logoButton">
-            <img src="../img/logo-sand.svg" alt="SAND" />
+            <img src="../../public/img/logo-sand.svg" alt="SAND" />
           </a>
         </div>
         <div class="col-lg-6">
@@ -35,13 +35,16 @@
 <style scoped>
 header {
   padding: 60px 0 100px;
-  background-image: url(../img/header-white-background.png), url(../img/header-background.png);
+  background-image:
+    url(../../public/img/header-white-background.png), url(../../public/img/header-background.png);
   background-position: top;
   background-size: cover;
 }
 
 .blue header {
-  background-image: url(../img/header-white-background.png), url(../img/header-background-blue.png);
+  background-image:
+    url(../../public/img/header-white-background.png),
+    url(../../public/img/header-background-blue.png);
 }
 
 img {

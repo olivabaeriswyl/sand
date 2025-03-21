@@ -13,7 +13,7 @@ import ButtonBase from './CompButton.vue'
     </div>
     <div class="row">
       <div class="col-12 animation-implant">
-        <img src="../img/technology-implant.gif" alt="Animation de l'implant, rond" />
+        <img src="../../public/img/technology-implant.gif" alt="Animation de l'implant, rond" />
       </div>
     </div>
     <div class="section-margin">
@@ -42,7 +42,7 @@ import ButtonBase from './CompButton.vue'
       <div class="col-lg-8">
         <img
           class="schema-img"
-          src="../img/technology-schema.png"
+          src="../../public/img/technology-schema.png"
           alt="schéma 1 Analyse du cycle du sommeil, 2 Connexion sécurisée au serveur onirique, 3 Téléchargement du scénario séléctionné, 4 Intégration progressive dans l'activité cognitive, 5 Expérience immersive et fluide"
         />
       </div>
@@ -67,7 +67,7 @@ import ButtonBase from './CompButton.vue'
       <div class="col-lg-4 offset-lg-6">
         <img
           class="schema-img section-margin"
-          src="../img/technology-person.gif"
+          src="../../public/img/technology-person.gif"
           alt="Implant posé à la base de la nuque"
         />
       </div>

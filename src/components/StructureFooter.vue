@@ -13,7 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <img id="footer-logo" src="../img/logo-sand.svg" alt="SAND" />
+          <img id="footer-logo" src="../../public/img/logo-sand.svg" alt="SAND" />
           <p id="footer-rights">© 2036 SAND. Tous droits réservés.</p>
         </div>
         <div class="col-lg-3">
@@ -48,7 +48,7 @@
         </div>
         <div class="col-lg-1">
           <button @click="scrollToTop">
-            <img src="../img/arrow.svg" alt="^" />
+            <img src="../../public/img/arrow.svg" alt="^" />
           </button>
         </div>
       </div>
@@ -59,13 +59,16 @@
 <style scoped>
 footer {
   padding: 300px 0 80px;
-  background-image: url(../img/footer-background-white.png), url(../img/footer-background.png);
+  background-image:
+    url(../../public/img/footer-background-white.png), url(../../public/img/footer-background.png);
   background-position: bottom;
   background-size: cover;
 }
 
 .blue footer {
-  background-image: url(../img/footer-background-white.png), url(../img/footer-background-blue.png);
+  background-image:
+    url(../../public/img/footer-background-white.png),
+    url(../../public/img/footer-background-blue.png);
 }
 
 #footer-logo {

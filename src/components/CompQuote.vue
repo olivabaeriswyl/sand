@@ -20,7 +20,8 @@ import ButtonBase from './CompButton.vue'
 
 <style scoped>
 #quote-background {
-  background-image: url(../img/quote-background-white.png), url(../img/quote-background.png);
+  background-image:
+    url(../../public/img/quote-background-white.png), url(../../public/img/quote-background.png);
   background-position: center;
   background-size: cover;
   padding: 160px 0;
@@ -28,6 +29,8 @@ import ButtonBase from './CompButton.vue'
 }
 
 .blue #quote-background {
-  background-image: url(../img/quote-background-white.png), url(../img/quote-background-blue.png);
+  background-image:
+    url(../../public/img/quote-background-white.png),
+    url(../../public/img/quote-background-blue.png);
 }
 </style>

@@ -19,7 +19,11 @@ import ButtonBase from './CompButton.vue'
         </p>
       </div>
       <div class="col-lg-6">
-        <img src="../img/about-scientist.png" alt="Scientifique passionné" id="img-scientist" />
+        <img
+          src="../../public/img/about-scientist.png"
+          alt="Scientifique passionné"
+          id="img-scientist"
+        />
       </div>
     </div>
   </div>
@@ -62,7 +66,7 @@ import ButtonBase from './CompButton.vue'
       </div>
       <div class="col-lg-4">
         <img
-          src="../img/about-boss.png"
+          src="../../public/img/about-boss.png"
           alt="Photographie de la directrice, souriante"
           id="img-boss"
         />
@@ -112,7 +116,7 @@ import ButtonBase from './CompButton.vue'
 }
 
 #ani-values-background {
-  background-image: url(../img/values-background.png);
+  background-image: url(../../public/img/values-background.png);
   background-position: center;
   background-size: cover;
   padding: 200px 0;

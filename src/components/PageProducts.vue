@@ -16,7 +16,11 @@ import Subscription from './UniqueSubscription.vue'
         <h3>L'implant Neural SAND</h3>
       </div>
       <div class="col-lg-3">
-        <img id="implant-size" src="../img/products-implant.png" alt="Photographie de l'implant" />
+        <img
+          id="implant-size"
+          src="../../public/img/products-implant.png"
+          alt="Photographie de l'implant"
+        />
       </div>
       <div class="col-lg-6">
         <p>
