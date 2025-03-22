@@ -7,12 +7,14 @@ import Horizontal from './UniqueHorizontal.vue'
 </script>
 
 <template>
+  <img id="sandman" src="../../public/img/home-sandman.png" alt="" />
   <div class="container">
     <div class="row">
-      <img id="sandman" src="../../public/img/home-sandman.png" alt="" />
       <div class="col-lg-10 offset-lg-1">
-        <img class="img-inside" src="../../public/img/logo-big.svg" alt="SAND" />
-        <div class="row">
+        <div class="row section-margin">
+          <div class="col-12">
+            <img class="img-inside" src="../../public/img/logo-big.svg" alt="SAND" />
+          </div>
           <div class="col-lg-6">
             <h3>Imaginez vos nuits,</h3>
           </div>
@@ -33,18 +35,25 @@ import Horizontal from './UniqueHorizontal.vue'
       compTitle="Bienvenue dans l'ère des rêves contrôlés"
       compText="Notre technologie révolutionnaire repose sur un implant neural de pointe, conçu par nos experts en neurosciences et en intelligence artificielle. Fixé à la base de votre nuque, cet implant synchronise vos cycles de sommeil avec notre base de contrôle intuitive pour créer des rêves sur mesure."
     />
+    <div class="row">
+      <div class="col-2 offset-lg-4">
+        <img class="img-inside" src="../../public/img/homepage-implant.png" alt="implant" />
+      </div>
+    </div>
     <LineLayout
       compTitle="Technologie et sécurité : une innovation contrôlée"
       compText="Notre implant est conçu pour une expérience fluide et sécurisée. SAND analyse en temps réel vos phases de sommeil pour déclencher les rêves au moment idéal, garantissant une immersion totale sans perturber votre repos naturel. Chaque implant est soumis à des protocoles de sécurité stricts et peut être mis à jour ou réparé par nos experts."
     />
-    <div class="row">
+    <div class="row section-margin">
       <div class="col-lg-6 offset-lg-6">
         <ButtonBase compButton="En savoir plus" />
       </div>
     </div>
   </div>
 
-  <Explore />
+  <div class="section-margin">
+    <Explore />
+  </div>
 
   <Horizontal />
 
@@ -104,5 +113,9 @@ import Horizontal from './UniqueHorizontal.vue'
 
 #slogan-right {
   text-align: end;
+}
+
+.section-margin {
+  margin-bottom: 180px;
 }
 </style>
