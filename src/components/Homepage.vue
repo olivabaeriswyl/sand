@@ -68,30 +68,38 @@ import Horizontal from './UniqueHorizontal.vue'
         <h3>Nos offres</h3>
       </div>
       <div class="col-12">
-        <p><strong>SAND propose des abonnements adaptés à vos besoins :</strong></p>
+        <p id="text-margin">
+          <strong>SAND propose des abonnements adaptés à vos besoins :</strong>
+        </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="offers-margin">
       <div class="col-lg-4">
-        <h4>Découverte</h4>
-        <p>
-          <strong>3 rêves par mois</strong> pour explorer en douceur. Choisissez entre la Cité des
-          Rêves ou l’Espace Personnel <strong>en fonction de vos besoins</strong>.
-        </p>
+        <div class="card-color">
+          <h4>Découverte</h4>
+          <p>
+            <strong>3 rêves par mois</strong> pour explorer en douceur. Choisissez entre la Cité des
+            Rêves ou l’Espace Personnel <strong>en fonction de vos besoins</strong>.
+          </p>
+        </div>
       </div>
       <div class="col-lg-4">
-        <h4>Explorateur</h4>
-        <p>
-          Rêves personnalisés ou accès à la cité des rêves <strong>10 fois par mois</strong> pour
-          une <strong>immersion approfondie</strong>.
-        </p>
+        <div class="card-color">
+          <h4>Explorateur</h4>
+          <p>
+            Rêves personnalisés ou accès à la cité des rêves <strong>10 fois par mois</strong> pour
+            une <strong>immersion approfondie</strong>.
+          </p>
+        </div>
       </div>
       <div class="col-lg-4">
-        <h4>Créateur</h4>
-        <p>
-          Accès à la Cité des Rêves et à l’Espace Personnel pour
-          <strong>façonner votre propre univers</strong>.
-        </p>
+        <div class="card-color">
+          <h4>Créateur</h4>
+          <p>
+            Accès à la Cité des Rêves et à l’Espace Personnel pour
+            <strong>façonner votre propre univers</strong>.
+          </p>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -99,7 +107,7 @@ import Horizontal from './UniqueHorizontal.vue'
         <h4>Commandez votre implant dès aujourd’hui et prenez le contrôle de vos rêves.</h4>
       </div>
       <div class="col-lg-4">
-        <ButtonBase compButton="En savoir plus" />
+        <ButtonBase buttonLink="#/products" compButton="En savoir plus" />
       </div>
     </div>
   </div>
@@ -107,8 +115,11 @@ import Horizontal from './UniqueHorizontal.vue'
 
 <style scoped>
 #sandman {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  max-width: 100%;
+  top: 80px;
 }
 
 .img-inside {
@@ -130,5 +141,23 @@ import Horizontal from './UniqueHorizontal.vue'
   position: relative;
   top: -100px;
   z-index: 10;
+}
+
+#text-margin {
+  margin: 0 0 40px;
+}
+
+.card-color {
+  background: var(--color-light-blue);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+h4 {
+  margin: 0 0 10px;
+}
+
+#offers-margin {
+  margin-bottom: 60px;
 }
 </style>
