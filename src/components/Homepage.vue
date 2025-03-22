@@ -51,11 +51,16 @@ import Horizontal from './UniqueHorizontal.vue'
     </div>
   </div>
 
-  <div class="section-margin">
-    <Explore />
-  </div>
+  <Explore />
 
   <Horizontal />
+  <div class="container">
+    <div class="row">
+      <div class="col-12" id="button-center">
+        <ButtonBase buttonLink="#/map" compButton="En savoir plus" />
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="row">
@@ -117,5 +122,13 @@ import Horizontal from './UniqueHorizontal.vue'
 
 .section-margin {
   margin-bottom: 180px;
+}
+
+#button-center {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -100px;
+  z-index: 10;
 }
 </style>

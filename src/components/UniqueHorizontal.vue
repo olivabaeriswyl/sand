@@ -1,6 +1,4 @@
 <script setup>
-import BaseButton from './CompButton.vue'
-
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -14,7 +12,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: '.slider-mask',
       start: 'top top',
-      end: '+=2000' /* Ajuste la longueur du scroll */,
+      end: '+=2000',
       scrub: 1,
       pin: true,
     },
@@ -23,37 +21,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-lg-12 section-parent">
-        <div class="section">
-          <h3>La Cité des Rêves: un univers en constante évolution</h3>
-        </div>
-        <div class="section">
-          <p>
-            Plongez dans un espace collectif où chaque rêveur contribue à façonner un monde sans
-            limites.
-          </p>
-        </div>
-        <div class="section">
-          <p>
-            La Neurosphère vous permet d'interagir avec d'autres utilisateurs, d'explorer ensemble
-            et de découvrir une réalité onirique partagée.
-          </p>
-        </div>
-        <div class="section">
-          <p>
-            Chaque nuit devient une aventure, un lieu d'exploration et de rencontres inoubliables.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <BaseButton compButton="En savoir plus" />
-      </div>
-    </div>
-  </div> -->
   <div class="slider-mask">
     <div class="slider-container">
       <div class="slider-element">
@@ -99,6 +66,10 @@ onMounted(() => {
   display: flex;
   height: 100%;
   width: 400vw;
+  background-image: url(../../public/img/homepage-horizontal.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .slider-element {
@@ -108,7 +79,7 @@ onMounted(() => {
 }
 
 .slider-content {
-  width: 60%; /* Définit la largeur du contenu */
+  width: 60%;
 }
 
 @media (max-width: 576px) {
@@ -122,9 +93,4 @@ onMounted(() => {
     width: 40%;
   }
 }
-
-/* width: 570px; */
-/* .section-parent {
-  display: flex;
-} */
 </style>
