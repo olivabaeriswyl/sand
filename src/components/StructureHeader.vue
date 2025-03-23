@@ -64,6 +64,7 @@ a {
 #nav-gap {
   margin-bottom: 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 

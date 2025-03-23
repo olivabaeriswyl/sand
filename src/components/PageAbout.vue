@@ -115,6 +115,25 @@ import ButtonBase from './CompButton.vue'
   margin-top: 200px;
 }
 
+@media (max-width: 576px) {
+  .question-parent {
+    flex-direction: column;
+  }
+
+  #question-one {
+    margin: 0;
+  }
+
+  #question-two {
+    margin-top: 0;
+  }
+
+  #question-three {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
 #ani-values-background {
   background-image: url(../../public/img/values-background.png);
   background-position: center;

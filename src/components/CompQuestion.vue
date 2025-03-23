@@ -53,4 +53,10 @@ defineProps({
 #group:hover #answer {
   opacity: 1;
 }
+
+@media (max-width: 576px) {
+  #group {
+    width: 100%;
+  }
+}
 </style>

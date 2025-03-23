@@ -132,6 +132,7 @@ import Horizontal from './UniqueHorizontal.vue'
 }
 
 .section-margin {
+  margin-top: 25vh;
   margin-bottom: 180px;
 }
 

@@ -1,22 +1,14 @@
-<script setup>
-// import { inject } from 'vue'
-// const logoButton = inject('logoButton')
-// const scrollToTop = () => {
-//   if (logoButton?.value) {
-//     logoButton.value.scrollIntoView({ behavior: 'smooth' })
-//   }
-// }
-</script>
+<script setup></script>
 
 <template>
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-md-6">
           <img id="footer-logo" src="../../public/img/logo-sand.svg" alt="SAND" />
           <p id="footer-rights">© 2036 SAND. Tous droits réservés.</p>
         </div>
-        <div class="col-lg-3">
+        <div class="col-6 col-md-3">
           <div>
             <p class="title"><strong>Compagnie</strong></p>
             <a href="#/news">Actualités</a>
@@ -29,7 +21,7 @@
             <a href="#" target="_blank">Zao Technology</a>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-6 col-md-3">
           <div>
             <p class="title"><strong>Explorer</strong></p>
             <a href="#/technology">La technologie</a>
@@ -45,11 +37,6 @@
             <p class="title title-margin"><strong>Donation</strong></p>
             <a href="#/sponsor">Devenir Mécène</a>
           </div>
-        </div>
-        <div class="col-lg-1">
-          <button @click="scrollToTop">
-            <img src="../../public/img/arrow.svg" alt="^" />
-          </button>
         </div>
       </div>
     </div>

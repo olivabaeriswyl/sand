@@ -12,10 +12,10 @@ import Subscription from './UniqueSubscription.vue'
       </div>
     </div>
     <div class="row section-margin">
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3">
         <h3>L'implant Neural SAND</h3>
       </div>
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3 implant-position">
         <img
           id="implant-size"
           src="../../public/img/products-implant.png"
@@ -92,7 +92,7 @@ import Subscription from './UniqueSubscription.vue'
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 responsive-margin">
         <h3>L'appilcation SAND</h3>
         <p>
           Gratuite et intuitive, elle vous permet de lancer et personnaliser vos rêves en quelques
@@ -119,6 +119,22 @@ import Subscription from './UniqueSubscription.vue'
 #implant-size {
   width: 80%;
   height: auto;
+}
+
+@media (max-width: 576px) {
+  .implant-position {
+    display: flex;
+    justify-content: center;
+  }
+
+  #implant-size {
+    width: 250px;
+    height: auto;
+  }
+
+  .responsive-margin {
+    margin-bottom: 180px;
+  }
 }
 
 #implant-text-margin {

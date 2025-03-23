@@ -2,8 +2,8 @@
 
 <template>
   <div id="background-parent">
+    <div id="background"></div>
     <img src="../../public/img/map-icone-licorn.png" alt="" />
-    <!-- <img src="../../public/img/error-background.png" alt="" /> -->
     <div class="container">
       <div class="row">
         <div class="col-12" id="direction">
@@ -27,6 +27,7 @@
 }
 
 #direction {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -43,15 +44,26 @@ img {
   rotate: -15deg;
 }
 
-/*
-#background {
-  background-image: url(../../public/img/error-background-white.png), url(../../public/img/error-background.png);
-  background-position: center;
-  background-size: cover;
+@media (max-width: 576px) {
+  #error {
+    font-size: 200px;
+  }
 }
 
-img {
+@media (max-width: 400px) {
+  #error {
+    font-size: 100px;
+  }
+}
+
+/* #background {
+  background-image:
+    url(../../public/img/error-background-white.png), url(../../public/img/error-background.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  width: 800px;
+  height: 100vh;
+  width: 100vw;
 } */
 </style>

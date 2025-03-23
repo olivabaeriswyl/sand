@@ -17,12 +17,12 @@ defineProps({
   <div class="col-lg-6">
     <h4>{{ subscribeTitle }}</h4>
     <div class="row">
-      <div class="col-lg-8 presentation-text">
+      <div class="col-md-8 presentation-text">
         <p v-html="subscribeText"></p>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-sm-6">
         <div :class="card">
           <p class="subtitle-margin">
             <strong>{{ subscribeSubtitle }}</strong>
@@ -31,7 +31,7 @@ defineProps({
           <p class="price">{{ subscribePrice }}</p>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-sm-6 responsive-margin">
         <div :class="cardTwo">
           <p class="subtitle-margin">
             <strong>{{ subscribeSubtitleTwo }}</strong>
@@ -71,5 +71,11 @@ h4 {
 
 .presentation-text p {
   margin: 0 0 40px;
+}
+
+@media (max-width: 576px) {
+  .responsive-margin div {
+    margin-top: 20px;
+  }
 }
 </style>

@@ -106,4 +106,10 @@ h3 {
 .structure:hover img {
   opacity: 0;
 }
+
+@media (max-width: 576px) {
+  .structure {
+    flex-direction: column;
+  }
+}
 </style>
