@@ -65,54 +65,68 @@ onMounted(() => {
         <h2>Technologie : l’innovation au service de vos rêves</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 animation-implant">
-        <div id="position-implant-static">
+  </div>
+
+  <div id="background-implant">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 animation-implant">
+          <div id="position-implant-static">
+            <img
+              id="gif-implant"
+              src="../../public/img/technology-implant.gif"
+              alt="Animation de l'implant, rond"
+            />
+            <img
+              id="end-implant"
+              src="../../public/img/technology-implant.png"
+              alt="implant rond"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section-margin">
+        <LineLayout
+          compTitle="L'implant Neural SAND : une fusion de science et d'onirisme"
+          compText="L’implant SAND est un bijou de technologie avancée, conçu pour interagir en douceur avec votre activité cérébrale. Composé d’une micro-puce en bio-silicium, de neuro-capteurs quantiques et d’un réseau de stimulation synaptique, il module les fréquences cérébrales pour influencer les rêves."
+        />
+      </div>
+      <div class="row section-margin">
+        <div class="col-12">
+          <h3>Un fonctionnement naturel et intelligent</h3>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            Grâce à ses capteurs électro-neuronaux, l’implant analyse en temps réel votre cycle de
+            sommeil et identifie le moment idéal pour intervenir. Il établit ensuite une connexion
+            cryptée avec notre serveur onirique afin de télécharger le scénario sélectionné et de
+            l’intégrer progressivement et tout en douceur dans votre activité cognitive.
+          </p>
+          <p>
+            Cette interaction subtile permet de superposer des images, sons et sensations
+            directement dans le cortex onirique, créant ainsi un rêve fluide et réaliste, sans
+            jamais perturber votre sommeil profond.
+          </p>
+        </div>
+        <div class="col-lg-8 schema-animation">
+          <img class="schema-img img-one" src="../../public/img/technology-schema-one.png" alt="" />
+          <img class="schema-img img-two" src="../../public/img/technology-schema-two.png" alt="" />
           <img
-            id="gif-implant"
-            src="../../public/img/technology-implant.gif"
-            alt="Animation de l'implant, rond"
+            class="schema-img img-three"
+            src="../../public/img/technology-schema-three.png"
+            alt=""
           />
-          <img id="end-implant" src="../../public/img/technology-implant.png" alt="implant rond" />
+          <img
+            class="schema-img img-four"
+            src="../../public/img/technology-schema-four.png"
+            alt=""
+          />
+          <img class="schema-img img-end" src="../../public/img/technology-schema-end.png" alt="" />
         </div>
       </div>
     </div>
-    <div class="section-margin">
-      <LineLayout
-        compTitle="L'implant Neural SAND : une fusion de science et d'onirisme"
-        compText="L’implant SAND est un bijou de technologie avancée, conçu pour interagir en douceur avec votre activité cérébrale. Composé d’une micro-puce en bio-silicium, de neuro-capteurs quantiques et d’un réseau de stimulation synaptique, il module les fréquences cérébrales pour influencer les rêves."
-      />
-    </div>
-    <div class="row section-margin">
-      <div class="col-12">
-        <h3>Un fonctionnement naturel et intelligent</h3>
-      </div>
-      <div class="col-lg-4">
-        <p>
-          Grâce à ses capteurs électro-neuronaux, l’implant analyse en temps réel votre cycle de
-          sommeil et identifie le moment idéal pour intervenir. Il établit ensuite une connexion
-          cryptée avec notre serveur onirique afin de télécharger le scénario sélectionné et de
-          l’intégrer progressivement et tout en douceur dans votre activité cognitive.
-        </p>
-        <p>
-          Cette interaction subtile permet de superposer des images, sons et sensations directement
-          dans le cortex onirique, créant ainsi un rêve fluide et réaliste, sans jamais perturber
-          votre sommeil profond.
-        </p>
-      </div>
-      <div class="col-lg-8 schema-animation">
-        <img class="schema-img img-one" src="../../public/img/technology-schema-one.png" alt="" />
-        <img class="schema-img img-two" src="../../public/img/technology-schema-two.png" alt="" />
-        <img
-          class="schema-img img-three"
-          src="../../public/img/technology-schema-three.png"
-          alt=""
-        />
-        <img class="schema-img img-four" src="../../public/img/technology-schema-four.png" alt="" />
-        <img class="schema-img img-end" src="../../public/img/technology-schema-end.png" alt="" />
-      </div>
-    </div>
   </div>
+
   <Quote
     compQuote="Laissez-vous guider par SAND et plongez dans un univers où vos nuits deviennent des aventures inoubliables."
   />
@@ -123,28 +137,49 @@ onMounted(() => {
       </div>
     </div>
   </div>
-  <div class="container">
-    <LineLayout
-      compTitle="Simplicité et confort d’utilisation"
-      compText="L’implant SAND est conçu pour être facilement posé sur la nuque, à domicile. Son adhésion biomagnétique garantit un maintien optimal, sans inconfort ni nécessité d’intervention médicale. Une simple synchronisation avec l’application SAND permet d’activer ou de désactiver l’implant en un instant."
-    />
-    <div class="row">
-      <div class="col-lg-4 offset-lg-6">
-        <img
-          class="section-margin person-img"
-          src="../../public/img/technology-person.gif"
-          alt="Implant posé à la base de la nuque"
-        />
+  <div id="background-confort">
+    <div class="container">
+      <LineLayout
+        compTitle="Simplicité et confort d’utilisation"
+        compText="L’implant SAND est conçu pour être facilement posé sur la nuque, à domicile. Son adhésion biomagnétique garantit un maintien optimal, sans inconfort ni nécessité d’intervention médicale. Une simple synchronisation avec l’application SAND permet d’activer ou de désactiver l’implant en un instant."
+      />
+      <div class="row">
+        <div class="col-lg-4 offset-lg-6">
+          <img
+            class="section-margin person-img"
+            src="../../public/img/technology-person.gif"
+            alt="Implant posé à la base de la nuque"
+          />
+        </div>
       </div>
+      <LineLayout
+        compTitle="Sécurité et confidentialité"
+        compText="Nous accordons une importance capitale à votre sécurité et à votre intimité. Toutes les interactions entre l’implant et le serveur central sont cryptées et anonymisées. Seul l’utilisateur a accès à ses préférences et à l’historique de ses rêves."
+      />
     </div>
-    <LineLayout
-      compTitle="Sécurité et confidentialité"
-      compText="Nous accordons une importance capitale à votre sécurité et à votre intimité. Toutes les interactions entre l’implant et le serveur central sont cryptées et anonymisées. Seul l’utilisateur a accès à ses préférences et à l’historique de ses rêves."
-    />
   </div>
 </template>
 
 <style scoped>
+/* Fond */
+#background-implant {
+  background-image:
+    url(../../public/img/technology-background-implant-white.png),
+    url(../../public/img/technology-background-implant.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#background-confort {
+  background-image:
+    url(../../public/img/technology-background-confort-white.png),
+    url(../../public/img/technology-background-confort.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* Animation implant au scroll */
 #position-implant-static {
   position: relative;
@@ -236,9 +271,21 @@ onMounted(() => {
   left: 8px;
 }
 
+@media (max-width: 992px) {
+  .schema-animation {
+    height: 400px;
+  }
+}
+
 @media (max-width: 768px) {
   .schema-animation {
     height: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .schema-animation {
+    height: 600px;
   }
 }
 </style>
