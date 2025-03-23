@@ -8,6 +8,7 @@ import { onMounted } from 'vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
+// Apparition schéma au scroll
 onMounted(() => {
   gsap.utils.toArray('.schema-img').forEach((img, index) => {
     gsap.to(img, {
@@ -25,6 +26,36 @@ onMounted(() => {
     })
   })
 })
+
+// Animation implant au scroll
+onMounted(() => {
+  const gif = document.querySelector('#gif-implant')
+  const endImage = document.querySelector('#end-implant')
+
+  if (gif && endImage) {
+    gsap.to(gif, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: gif,
+        start: 'top 50%',
+        end: 'bottom 50%',
+        scrub: true,
+      },
+    })
+
+    gsap.to(endImage, {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: gif,
+        start: 'top 50%',
+        end: 'bottom 50%',
+        scrub: true,
+      },
+    })
+  } else {
+    console.warn("L'un des éléments n'a pas été trouvé.")
+  }
+})
 </script>
 
 <template>
@@ -36,11 +67,14 @@ onMounted(() => {
     </div>
     <div class="row">
       <div class="col-12 animation-implant">
-        <img
-          id="gif-implant"
-          src="../../public/img/technology-implant.gif"
-          alt="Animation de l'implant, rond"
-        />
+        <div id="position-implant-static">
+          <img
+            id="gif-implant"
+            src="../../public/img/technology-implant.gif"
+            alt="Animation de l'implant, rond"
+          />
+          <img id="end-implant" src="../../public/img/technology-implant.png" alt="implant rond" />
+        </div>
       </div>
     </div>
     <div class="section-margin">
@@ -75,7 +109,7 @@ onMounted(() => {
           alt=""
         />
         <img class="schema-img img-four" src="../../public/img/technology-schema-four.png" alt="" />
-        <!-- <img class="schema-img img-end" src="../../public/img/technology-schema-end.png" alt="" /> -->
+        <img class="schema-img img-end" src="../../public/img/technology-schema-end.png" alt="" />
       </div>
     </div>
   </div>
@@ -111,17 +145,22 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.section-margin {
-  margin-bottom: 120px;
+/* Animation implant au scroll */
+#position-implant-static {
+  position: relative;
 }
 
-#button-base {
-  margin-top: -260px;
+#end-implant {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.person-img {
-  width: auto;
-  height: 460px;
+#gif-implant {
+  position: relative;
+  z-index: 1;
 }
 
 .animation-implant {
@@ -134,6 +173,22 @@ onMounted(() => {
   height: 460px;
 }
 
+/* Marges */
+.section-margin {
+  margin-bottom: 120px;
+}
+
+#button-base {
+  margin-top: -260px;
+}
+
+/* Forcer image dans la div */
+.person-img {
+  width: auto;
+  height: 460px;
+}
+
+/* Apparition schéma au scroll */
 .schema-img {
   width: 100%;
   height: auto;
@@ -144,12 +199,6 @@ onMounted(() => {
 .schema-animation {
   position: relative;
   height: 300px;
-}
-
-@media (max-width: 768px) {
-  .schema-animation {
-    height: 300px;
-  }
 }
 
 .img-one {
@@ -180,10 +229,16 @@ onMounted(() => {
   left: 0;
 }
 
-/* .img-end {
-  z-index: 1;
+.img-end {
+  z-index: 10;
   position: absolute;
-  bottom: -80%;
+  top: 0;
   left: 8px;
-} */
+}
+
+@media (max-width: 768px) {
+  .schema-animation {
+    height: 300px;
+  }
+}
 </style>

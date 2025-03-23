@@ -30,23 +30,25 @@ import Horizontal from './UniqueHorizontal.vue'
     compQuote="Ne laissez plus vos nuits au hasard. Osez rêver grand.<br/> <strong>Repoussez les frontières de l'imaginaire</strong>, et transformez vos nuits en une <strong>expérience unique</strong>."
   />
 
-  <div class="container">
-    <LineLayout
-      compTitle="Bienvenue dans l'ère des rêves contrôlés"
-      compText="Notre technologie révolutionnaire repose sur un implant neural de pointe, conçu par nos experts en neurosciences et en intelligence artificielle. Fixé à la base de votre nuque, cet implant synchronise vos cycles de sommeil avec notre base de contrôle intuitive pour créer des rêves sur mesure."
-    />
-    <div class="row">
-      <div class="col-4 col-lg-2 offset-2 offset-lg-4">
-        <img class="img-inside" src="../../public/img/homepage-implant.png" alt="implant" />
+  <div id="animation-background-implant">
+    <div class="container">
+      <LineLayout
+        compTitle="Bienvenue dans l'ère des rêves contrôlés"
+        compText="Notre technologie révolutionnaire repose sur un implant neural de pointe, conçu par nos experts en neurosciences et en intelligence artificielle. Fixé à la base de votre nuque, cet implant synchronise vos cycles de sommeil avec notre base de contrôle intuitive pour créer des rêves sur mesure."
+      />
+      <div class="row">
+        <div class="col-4 col-lg-2 offset-2 offset-lg-4">
+          <img class="img-inside" src="../../public/img/homepage-implant.png" alt="implant" />
+        </div>
       </div>
-    </div>
-    <LineLayout
-      compTitle="Technologie et sécurité : une innovation contrôlée"
-      compText="Notre implant est conçu pour une expérience fluide et sécurisée. SAND analyse en temps réel vos phases de sommeil pour déclencher les rêves au moment idéal, garantissant une immersion totale sans perturber votre repos naturel. Chaque implant est soumis à des protocoles de sécurité stricts et peut être mis à jour ou réparé par nos experts."
-    />
-    <div class="row section-margin">
-      <div class="col-lg-6 offset-lg-6">
-        <ButtonBase compButton="En savoir plus" />
+      <LineLayout
+        compTitle="Technologie et sécurité : une innovation contrôlée"
+        compText="Notre implant est conçu pour une expérience fluide et sécurisée. SAND analyse en temps réel vos phases de sommeil pour déclencher les rêves au moment idéal, garantissant une immersion totale sans perturber votre repos naturel. Chaque implant est soumis à des protocoles de sécurité stricts et peut être mis à jour ou réparé par nos experts."
+      />
+      <div class="row section-margin">
+        <div class="col-lg-6 offset-lg-6">
+          <ButtonBase compButton="En savoir plus" />
+        </div>
       </div>
     </div>
   </div>
@@ -114,6 +116,16 @@ import Horizontal from './UniqueHorizontal.vue'
 </template>
 
 <style scoped>
+/* Présentation implant */
+#animation-background-implant {
+  background-image:
+    url(../../public/img/homepage-background-implant-white.png),
+    url(../../public/img/homepage-background-implant.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Autre */
 #sandman {
   height: auto;
   width: auto;
