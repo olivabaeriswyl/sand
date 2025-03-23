@@ -2,6 +2,29 @@
 import LineLayout from './CompLineLayout.vue'
 import Quote from './CompQuote.vue'
 import ButtonBase from './CompButton.vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  gsap.utils.toArray('.schema-img').forEach((img, index) => {
+    gsap.to(img, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: img,
+        start: 'center 60%',
+        end: 'center 30%',
+        scrub: true,
+        stagger: 0.5,
+      },
+    })
+  })
+})
 </script>
 
 <template>
@@ -13,7 +36,11 @@ import ButtonBase from './CompButton.vue'
     </div>
     <div class="row">
       <div class="col-12 animation-implant">
-        <img src="../../public/img/technology-implant.gif" alt="Animation de l'implant, rond" />
+        <img
+          id="gif-implant"
+          src="../../public/img/technology-implant.gif"
+          alt="Animation de l'implant, rond"
+        />
       </div>
     </div>
     <div class="section-margin">
@@ -39,12 +66,16 @@ import ButtonBase from './CompButton.vue'
           votre sommeil profond.
         </p>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-8 schema-animation">
+        <img class="schema-img img-one" src="../../public/img/technology-schema-one.png" alt="" />
+        <img class="schema-img img-two" src="../../public/img/technology-schema-two.png" alt="" />
         <img
-          class="schema-img"
-          src="../../public/img/technology-schema.png"
-          alt="schéma 1 Analyse du cycle du sommeil, 2 Connexion sécurisée au serveur onirique, 3 Téléchargement du scénario séléctionné, 4 Intégration progressive dans l'activité cognitive, 5 Expérience immersive et fluide"
+          class="schema-img img-three"
+          src="../../public/img/technology-schema-three.png"
+          alt=""
         />
+        <img class="schema-img img-four" src="../../public/img/technology-schema-four.png" alt="" />
+        <!-- <img class="schema-img img-end" src="../../public/img/technology-schema-end.png" alt="" /> -->
       </div>
     </div>
   </div>
@@ -66,7 +97,7 @@ import ButtonBase from './CompButton.vue'
     <div class="row">
       <div class="col-lg-4 offset-lg-6">
         <img
-          class="schema-img section-margin"
+          class="section-margin person-img"
           src="../../public/img/technology-person.gif"
           alt="Implant posé à la base de la nuque"
         />
@@ -88,6 +119,11 @@ import ButtonBase from './CompButton.vue'
   margin-top: -260px;
 }
 
+.person-img {
+  width: auto;
+  height: 460px;
+}
+
 .animation-implant {
   display: flex;
   justify-content: center;
@@ -101,5 +137,53 @@ import ButtonBase from './CompButton.vue'
 .schema-img {
   width: 100%;
   height: auto;
+  opacity: 0;
+  transform: translateY(-50px);
 }
+
+.schema-animation {
+  position: relative;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .schema-animation {
+    height: 300px;
+  }
+}
+
+.img-one {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+.img-two {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+.img-three {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.img-four {
+  z-index: 2;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+/* .img-end {
+  z-index: 1;
+  position: absolute;
+  bottom: -80%;
+  left: 8px;
+} */
 </style>

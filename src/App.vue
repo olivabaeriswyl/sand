@@ -30,7 +30,9 @@ const currentView = computed(() => {
 
 <template>
   <div :class="[currentPath == '#/technology' || currentPath == '#/about' ? 'blue' : 'salmon']">
-    <StructureHeader />
+    <div id="header-position">
+      <StructureHeader />
+    </div>
 
     <main>
       <component :is="currentView" />
@@ -40,4 +42,14 @@ const currentView = computed(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#header-position {
+  position: relative;
+  z-index: 2;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+</style>

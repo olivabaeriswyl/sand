@@ -11,15 +11,15 @@ import Horizontal from './UniqueHorizontal.vue'
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
-        <div class="row section-margin">
+        <div class="row section-margin-header">
           <div class="col-12">
             <img class="img-inside" src="../../public/img/logo-big.svg" alt="SAND" />
           </div>
-          <div class="col-lg-6">
-            <h3>Imaginez vos nuits,</h3>
+          <div class="col-md-6">
+            <h3 class="slogan">Imaginez vos nuits,</h3>
           </div>
-          <div class="col-lg-6">
-            <h3 id="slogan-right">Réinventez votre monde.</h3>
+          <div class="col-md-6">
+            <h3 class="slogan" id="slogan-right">Réinventez votre monde.</h3>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ import Horizontal from './UniqueHorizontal.vue'
       compText="Notre technologie révolutionnaire repose sur un implant neural de pointe, conçu par nos experts en neurosciences et en intelligence artificielle. Fixé à la base de votre nuque, cet implant synchronise vos cycles de sommeil avec notre base de contrôle intuitive pour créer des rêves sur mesure."
     />
     <div class="row">
-      <div class="col-2 offset-lg-4">
+      <div class="col-4 col-lg-2 offset-2 offset-lg-4">
         <img class="img-inside" src="../../public/img/homepage-implant.png" alt="implant" />
       </div>
     </div>
@@ -103,7 +103,7 @@ import Horizontal from './UniqueHorizontal.vue'
       </div>
     </div>
     <div class="row">
-      <div class="col-8">
+      <div class="col-12 col-md-8">
         <h4>Commandez votre implant dès aujourd’hui et prenez le contrôle de vos rêves.</h4>
       </div>
       <div class="col-lg-4">
@@ -119,7 +119,7 @@ import Horizontal from './UniqueHorizontal.vue'
   width: auto;
   position: absolute;
   max-width: 100%;
-  top: 80px;
+  top: -180px;
 }
 
 .img-inside {
@@ -131,8 +131,12 @@ import Horizontal from './UniqueHorizontal.vue'
   text-align: end;
 }
 
+.section-margin-header {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
 .section-margin {
-  margin-top: 25vh;
   margin-bottom: 180px;
 }
 
@@ -160,5 +164,37 @@ h4 {
 
 #offers-margin {
   margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 2rem;
+  }
+
+  #slogan-right {
+    text-align: left;
+  }
+
+  .section-margin-header {
+    margin-top: 100px;
+  }
+
+  #sandman {
+    top: -120px;
+  }
+
+  .slogan {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-margin-header {
+    margin-top: 100px;
+  }
+
+  .card-color {
+    margin-bottom: 20px;
+  }
 }
 </style>

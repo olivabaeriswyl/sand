@@ -74,4 +74,10 @@ h4 {
     background-size: auto 90%;
   }
 }
+
+@media (max-width: 768px) {
+  .background {
+    background-image: url(../../public/img/homepage-explore-mobile.png);
+  }
+}
 </style>
