@@ -107,9 +107,23 @@ h3 {
   opacity: 0;
 }
 
+@media (min-width: 576px) and (max-width: 1142px) {
+  .box {
+    height: 600px;
+  }
+}
+
 @media (max-width: 576px) {
   .structure {
     flex-direction: column;
+  }
+
+  .box p {
+    opacity: 1;
+  }
+
+  .box img {
+    opacity: 0;
   }
 }
 </style>
