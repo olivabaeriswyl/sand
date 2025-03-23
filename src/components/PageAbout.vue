@@ -6,30 +6,33 @@ import ButtonBase from './CompButton.vue'
 </script>
 
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Qui sommes nous</h2>
-      </div>
-      <div class="col-lg-6">
-        <p>
-          Chez SAND, nous sommes des passionnés de l’esprit humain, de ses mystères et de ses
-          possibilités infinies. Notre ambition : offrir à chacun le pouvoir de contrôler ses rêves
-          et d'explorer l'imaginaire sans limite.
-        </p>
-      </div>
-      <div class="col-lg-6">
-        <img
-          src="../../public/img/about-scientist.png"
-          alt="Scientifique passionné"
-          id="img-scientist"
-        />
+  <div id="backround-implant">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Qui sommes nous</h2>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            Chez SAND, nous sommes des passionnés de l’esprit humain, de ses mystères et de ses
+            possibilités infinies. Notre ambition : offrir à chacun le pouvoir de contrôler ses
+            rêves et d'explorer l'imaginaire sans limite.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="../../public/img/about-scientist.png"
+            alt="Scientifique passionné"
+            id="img-scientist"
+          />
+        </div>
       </div>
     </div>
+    <div id="ani-values-background">
+      <Values />
+    </div>
   </div>
-  <div id="ani-values-background">
-    <Values />
-  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -84,6 +87,7 @@ import ButtonBase from './CompButton.vue'
 </template>
 
 <style scoped>
+/* Forcer image dans bootstrap */
 #img-boss {
   width: 100%;
   height: 100%;
@@ -101,6 +105,7 @@ import ButtonBase from './CompButton.vue'
   height: auto;
 }
 
+/* Questions */
 .question-parent {
   display: flex;
   justify-content: space-around;
@@ -134,10 +139,15 @@ import ButtonBase from './CompButton.vue'
   }
 }
 
+/* Fond */
+#backround-implant {
+  background-image: url(../../public/img/about-background-values.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #ani-values-background {
-  background-image: url(../../public/img/values-background.png);
-  background-position: center;
-  background-size: cover;
-  padding: 200px 0;
+  padding-bottom: 120px;
 }
 </style>
