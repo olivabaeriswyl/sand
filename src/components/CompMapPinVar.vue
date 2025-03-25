@@ -39,7 +39,7 @@ img {
 p {
   margin-bottom: 10px;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .map-pin:hover p {

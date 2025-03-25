@@ -8,7 +8,7 @@ import MapPinVar from './CompMapPinVar.vue'
   <div class="structure">
     <div class="box box-personal">
       <div class="box-map box-personal-map">
-        <h2>Espace Personnel : vos rêves, votre univers</h2>
+        <h2>Espace Personnel <span>: vos rêves, votre univers</span></h2>
         <div class="pin-parent">
           <MapPinVar
             mapText="Grâce à l’implant SAND et à notre application intuitive, vous pouvez programmer vos rêves avant de sombrer dans le sommeil."
@@ -45,7 +45,7 @@ import MapPinVar from './CompMapPinVar.vue'
 
     <div class="box box-city">
       <div class="box-map box-city-map">
-        <h2>La Cité des Rêves : un monde collectif et évolutif</h2>
+        <h2>La Cité des Rêves <span>: un monde collectif et évolutif</span></h2>
         <div class="pin-parent">
           <MapPinVar
             mapText="La Cité des Rêves est un espace partagé où les songes des utilisateurs se mêlent et évoluent en fonction d’un scénario de base programmé par défaut."
@@ -83,39 +83,66 @@ import MapPinVar from './CompMapPinVar.vue'
 </template>
 
 <style scoped>
+/* Fonctionnement de base */
+* {
+  box-sizing: border-box;
+}
+
 .structure {
   display: flex;
 }
 
 .box {
-  padding: 40px 10px;
+  padding: 40px 20px;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 0%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transition: flex-grow 0.3s ease-in-out;
+  justify-content: space-between;
+  transition: flex-grow 0.5s ease-in-out;
   overflow: hidden;
-  height: 100vh;
+  height: 100dvh;
+  width: 100dvw;
+  position: relative;
 }
 
 .box:hover {
   flex-grow: 3;
 }
 
+.box:hover .pin-parent,
+.box:hover .box-value {
+  opacity: 1;
+  transition: opacity 0.5s 0.3s ease-in-out;
+}
+
+.box:not(:hover) .pin-parent,
+.box:not(:hover) .box-value {
+  opacity: 0;
+  transition: opacity 0.2s 0s ease-in-out;
+}
+
+.pin-parent {
+  position: absolute;
+}
+
+/* Map de fond */
 .box-personal {
+  left: 0;
   background: url(../../public/img/map-blue.png), var(--color-salmon);
   background-position: left center;
   background-size: cover;
 }
 
 .box-city {
+  right: 0;
   background: url(../../public/img/map-salmon.png), var(--color-light-blue);
   background-position: right center;
   background-size: cover;
 }
 
+/* Layout des cartes */
 .box-value {
   display: flex;
   justify-content: space-between;
@@ -124,7 +151,6 @@ import MapPinVar from './CompMapPinVar.vue'
 .box-map {
   display: flex;
   align-items: center;
-  padding-bottom: 300px;
 }
 
 .box-city-map {
@@ -134,56 +160,60 @@ import MapPinVar from './CompMapPinVar.vue'
 .structure:hover h2 {
   font-size: 36px;
   rotate: 90deg;
+  width: 380px;
 }
 
 h2 {
-  width: 360px;
+  width: 480px;
   rotate: 0deg;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 .box:hover h2 {
   rotate: 0deg;
 }
 
+/* Titre raccourcit */
+span {
+  transition: opacity 1s ease-in-out;
+}
+
+.structure:hover .box:not(:hover) span {
+  opacity: 0;
+}
+
 /* Position pins */
-.pin-parent {
-  position: relative;
+.map-pin {
+  position: absolute;
 }
 
 #pin-castle {
-  position: absolute;
-  top: 20vh;
-  right: -15vw;
+  top: 8dvh;
+  left: 30dvw;
 }
 
 #pin-licorn {
-  position: absolute;
-  top: 40vh;
-  right: 5vw;
+  top: 30dvh;
+  left: 10dvw;
 }
 
 #pin-dragon {
-  position: absolute;
-  top: 50vh;
-  right: -25vw;
+  top: 40dvh;
+  left: 36dvw;
 }
 
 #pin-chest {
-  position: absolute;
-  top: 0;
-  right: -15vw;
+  top: -5dvh;
+  right: 30dvw;
 }
 
 #pin-trolls {
-  position: absolute;
-  top: 40vh;
-  right: -6vw;
+  top: 36dvh;
+  right: 38dvw;
 }
 
 #pin-tower {
-  position: absolute;
-  top: 48vh;
-  right: -35vw;
+  top: 30dvh;
+  right: 8dvw;
 }
 </style>

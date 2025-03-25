@@ -29,6 +29,7 @@ const imageSrc = computed(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
 }
 
 img {
@@ -39,7 +40,7 @@ img {
 p {
   margin-top: 10px;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .map-pin:hover p {

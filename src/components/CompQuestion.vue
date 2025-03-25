@@ -24,7 +24,7 @@ defineProps({
   background-repeat: no-repeat;
   height: 100%;
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   display: flex;
   align-items: center;
   padding: 0 80px;
@@ -37,7 +37,7 @@ defineProps({
   background-repeat: no-repeat;
   padding: 220px 40px;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 #group {

@@ -15,9 +15,13 @@ defineProps({
 </template>
 
 <style scoped>
+.map-value {
+  width: 30dvw;
+}
+
 .map-value #text {
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .map-value:hover #text {

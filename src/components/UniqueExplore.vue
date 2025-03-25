@@ -50,7 +50,7 @@ const hoveredText = ref(false)
   background-size: auto 70%;
   background-repeat: no-repeat;
   padding-bottom: 300px;
-  transition: background-image 0.5s ease;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .background.wizard {

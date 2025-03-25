@@ -76,7 +76,7 @@ h3 {
 
 .box p {
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .box:hover p {
@@ -100,7 +100,7 @@ h3 {
 }
 
 .structure img {
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .structure:hover img {

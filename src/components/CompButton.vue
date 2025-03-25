@@ -21,7 +21,7 @@ a {
   padding: 10px 40px;
   border: var(--color-salmon) solid 2px;
   border-radius: 40px;
-  transition: all 0.4s;
+  transition: all 0.4s ease-in-out;
   display: inline-block;
 }
 

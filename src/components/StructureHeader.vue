@@ -57,7 +57,7 @@ a {
   font-weight: 400;
   letter-spacing: -0.15px;
   text-decoration: none;
-  transition: font-weight 0.2s;
+  transition: font-weight 0.2s ease-in-out;
   text-shadow: 0 0 6px white;
 }
 
@@ -76,7 +76,7 @@ a {
 
 #nav-end-gap a {
   font-weight: 700;
-  transition: font-weight 0.2s;
+  transition: font-weight 0.2s ease-in-out;
 }
 
 a:hover,
