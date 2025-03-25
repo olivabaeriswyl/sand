@@ -125,7 +125,7 @@ import Horizontal from './UniqueHorizontal.vue'
   background-size: cover;
 }
 
-/* Autre */
+/* Image header effet */
 #sandman {
   height: auto;
   width: auto;
@@ -134,6 +134,7 @@ import Horizontal from './UniqueHorizontal.vue'
   top: -180px;
 }
 
+/* Autre */
 .img-inside {
   width: 100%;
   height: 100%;

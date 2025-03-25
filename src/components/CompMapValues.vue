@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="map-value">
     <p>
       <strong>{{ mapValue }}</strong>
     </p>
@@ -15,11 +15,12 @@ defineProps({
 </template>
 
 <style scoped>
-div #text {
+.map-value #text {
   opacity: 0;
+  transition: opacity 0.5s;
 }
 
-div:hover #text {
+.map-value:hover #text {
   opacity: 1;
 }
 </style>

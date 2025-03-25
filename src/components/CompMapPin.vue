@@ -17,14 +17,14 @@ const imageSrc = computed(() => {
 </script>
 
 <template>
-  <div :id="mapPinPosition">
+  <div :id="mapPinPosition" class="map-pin">
     <img img v-if="imageSrc" :src="imageSrc" alt="pin" />
     <p>{{ mapText }}</p>
   </div>
 </template>
 
 <style scoped>
-div {
+.map-pin {
   width: 370px;
   display: flex;
   flex-direction: column;
@@ -38,5 +38,11 @@ img {
 
 p {
   margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.map-pin:hover p {
+  opacity: 1;
 }
 </style>
