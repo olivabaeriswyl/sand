@@ -179,6 +179,12 @@ h4 {
   margin-bottom: 60px;
 }
 
+@media (max-width: 992px) {
+  .card-color {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .slogan {
     font-size: 2rem;
@@ -204,10 +210,6 @@ h4 {
 @media (max-width: 576px) {
   .section-margin-header {
     margin-top: 100px;
-  }
-
-  .card-color {
-    margin-bottom: 20px;
   }
 }
 </style>

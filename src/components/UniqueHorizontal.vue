@@ -79,16 +79,6 @@ onMounted(() => {
   left: 0;
 }
 
-/* .img-background {
-  height: 80dvh;
-  width: 100%;
-  background-image: url(../../public/img/homepage-horizontal.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-} */
-
 .slider-layout {
   display: flex;
 }

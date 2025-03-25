@@ -1,0 +1,15 @@
+    <svg class="filter-svg">
+      <!-- Définition du filtre -->
+      <defs>
+        <filter id="grainyEffect">
+          <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" />
+        </filter>
+      </defs>
+
+      <!-- Fond normal -->
+      <rect width="50" height="50" fill="transparent" />
+
+      <!-- Cercle avec l'effet grainé qui suit la souris -->
+      <circle r="50" filter="url(#grainyEffect)" fill="#FF957D" />
+    </svg>
