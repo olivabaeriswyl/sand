@@ -23,34 +23,38 @@ onMounted(() => {
 <template>
   <div class="slider-mask">
     <div class="slider-container">
-      <div class="slider-element">
-        <div class="slider-content">
-          <h3>La Cité des Rêves: un univers en constante évolution</h3>
+      <div class="slider-layout">
+        <div class="slider-element">
+          <div class="slider-content">
+            <h3>La Cité des Rêves: un univers en constante évolution</h3>
+          </div>
+        </div>
+        <div class="slider-element">
+          <div class="slider-content">
+            <p>
+              Plongez dans un espace collectif où chaque rêveur contribue à façonner un monde sans
+              limites.
+            </p>
+          </div>
+        </div>
+        <div class="slider-element">
+          <div class="slider-content">
+            <p>
+              La Neurosphère vous permet d'interagir avec d'autres utilisateurs, d'explorer ensemble
+              et de découvrir une réalité onirique partagée.
+            </p>
+          </div>
+        </div>
+        <div class="slider-element">
+          <div class="slider-content">
+            <p>
+              Chaque nuit devient une aventure, un lieu d'exploration et de rencontres inoubliables.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="slider-element">
-        <div class="slider-content">
-          <p>
-            Plongez dans un espace collectif où chaque rêveur contribue à façonner un monde sans
-            limites.
-          </p>
-        </div>
-      </div>
-      <div class="slider-element">
-        <div class="slider-content">
-          <p>
-            La Neurosphère vous permet d'interagir avec d'autres utilisateurs, d'explorer ensemble
-            et de découvrir une réalité onirique partagée.
-          </p>
-        </div>
-      </div>
-      <div class="slider-element">
-        <div class="slider-content">
-          <p>
-            Chaque nuit devient une aventure, un lieu d'exploration et de rencontres inoubliables.
-          </p>
-        </div>
-      </div>
+      <!-- <div class="img-background"></div> -->
+      <img src="../../public/img/homepage-horizontal.png" alt="" class="horizontal-img" />
     </div>
   </div>
 </template>
@@ -63,13 +67,30 @@ onMounted(() => {
 
 .slider-container {
   padding: 180px;
-  display: flex;
   height: 100%;
   width: 400vw;
+}
+
+.horizontal-img {
+  width: 88%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+/* .img-background {
+  height: 80dvh;
+  width: 100%;
   background-image: url(../../public/img/homepage-horizontal.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  position: absolute;
+} */
+
+.slider-layout {
+  display: flex;
 }
 
 .slider-element {

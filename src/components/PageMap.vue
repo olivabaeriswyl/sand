@@ -89,11 +89,12 @@ import MapPinVar from './CompMapPinVar.vue'
 }
 
 .structure {
+  margin-top: -150px;
   display: flex;
 }
 
 .box {
-  padding: 40px 20px;
+  padding: 120px 20px 40px;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 0%;
@@ -199,7 +200,7 @@ span {
 }
 
 #pin-dragon {
-  top: 40dvh;
+  top: 36dvh;
   left: 36dvw;
 }
 
@@ -218,10 +219,50 @@ span {
   right: 8dvw;
 }
 
+@media (max-width: 1260px) {
+  #pin-dragon {
+    top: 36dvh;
+    left: 40dvw;
+  }
+
+  #pin-chest {
+    top: -5dvh;
+    right: 34dvw;
+  }
+
+  #pin-trolls {
+    top: 36dvh;
+    right: 38dvw;
+  }
+}
+
+@media (max-width: 1146px) {
+  #pin-dragon {
+    top: 30dvh;
+    left: 40dvw;
+  }
+
+  #pin-trolls {
+    top: 34dvh;
+    right: 20dvw;
+  }
+
+  #pin-tower {
+    top: 10dvh;
+    right: 8dvw;
+  }
+}
+
+@media (max-width: 576px) {
+  .structure {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1000px) {
   #pin-castle {
     top: 0dvh;
-    left: 26dvw;
+    left: 22dvw;
   }
 
   #pin-licorn {
@@ -231,7 +272,7 @@ span {
 
   #pin-dragon {
     top: 52dvh;
-    left: 26dvw;
+    left: 28dvw;
   }
 
   #pin-chest {
@@ -241,12 +282,12 @@ span {
 
   #pin-trolls {
     top: 32dvh;
-    right: 0dvw;
+    right: -2dvw;
   }
 
   #pin-tower {
     top: 54dvh;
-    right: 0dvw;
+    right: 4dvw;
   }
 
   h2 {
@@ -263,9 +304,52 @@ span {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 825px) {
+  #pin-castle {
+    top: 0dvh;
+    left: 38dvw;
+  }
+
+  #pin-licorn {
+    top: 20dvh;
+    left: 20dvw;
+  }
+
+  #pin-dragon {
+    top: 32dvh;
+    left: 46dvw;
+  }
+
+  #pin-chest {
+    top: 4dvh;
+    right: 18dvw;
+  }
+
+  #pin-trolls {
+    top: 26dvh;
+    right: -2dvw;
+  }
+
+  #pin-tower {
+    top: 40dvh;
+    right: 26dvw;
+  }
+}
+
+@media (max-width: 825px) {
   .structure {
     flex-direction: column;
+  }
+}
+
+/* Marges haut sur header */
+@media (max-width: 992px) {
+  .structure {
+    margin-top: -208px;
+  }
+
+  .box {
+    padding: 160px 20px 40px;
   }
 }
 </style>

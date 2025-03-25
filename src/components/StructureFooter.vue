@@ -45,14 +45,19 @@
 
 <style scoped>
 footer {
-  padding: 300px 0 80px;
-  background-image:
-    url(../../public/img/footer-background-white.png), url(../../public/img/footer-background.png);
+  padding: 20px 0 80px;
   background-position: bottom;
   background-size: cover;
 }
 
+.salmon footer {
+  padding: 300px 0 80px;
+  background-image:
+    url(../../public/img/footer-background-white.png), url(../../public/img/footer-background.png);
+}
+
 .blue footer {
+  padding: 300px 0 80px;
   background-image:
     url(../../public/img/footer-background-white.png),
     url(../../public/img/footer-background-blue.png);
@@ -72,7 +77,7 @@ a {
   font-weight: 400;
   letter-spacing: -0.15px;
   text-decoration: none;
-  transition: font-weight 0.2s;
+  transition: font-weight 0.2s ease-in-out;
   display: block;
   margin-bottom: 10px;
 }

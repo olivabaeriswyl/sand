@@ -18,7 +18,7 @@ onMounted(() => {
       ease: 'power2.out',
       scrollTrigger: {
         trigger: img,
-        start: 'center 60%',
+        start: 'end 60%',
         end: 'center 30%',
         scrub: true,
         stagger: 0.5,
@@ -130,13 +130,6 @@ onMounted(() => {
   <Quote
     compQuote="Laissez-vous guider par SAND et plongez dans un univers où vos nuits deviennent des aventures inoubliables."
   />
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 offset-lg-1">
-        <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" id="button-base" />
-      </div>
-    </div>
-  </div>
   <div id="background-confort">
     <div class="container">
       <LineLayout
@@ -156,6 +149,13 @@ onMounted(() => {
         compTitle="Sécurité et confidentialité"
         compText="Nous accordons une importance capitale à votre sécurité et à votre intimité. Toutes les interactions entre l’implant et le serveur central sont cryptées et anonymisées. Seul l’utilisateur a accès à ses préférences et à l’historique de ses rêves."
       />
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-6">
+        <ButtonBase buttonLink="#/commande" compButton="Commander l'implant" id="button-base" />
+      </div>
     </div>
   </div>
 </template>

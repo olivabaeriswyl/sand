@@ -34,14 +34,19 @@
 
 <style scoped>
 header {
-  padding: 60px 0 100px;
-  background-image:
-    url(../../public/img/header-white-background.png), url(../../public/img/header-background.png);
+  padding: 60px 0 10px;
   background-position: top;
   background-size: cover;
 }
 
+.salmon header {
+  padding: 60px 0 100px;
+  background-image:
+    url(../../public/img/header-white-background.png), url(../../public/img/header-background.png);
+}
+
 .blue header {
+  padding: 60px 0 100px;
   background-image:
     url(../../public/img/header-white-background.png),
     url(../../public/img/header-background-blue.png);

@@ -22,6 +22,7 @@ const currentPath = ref(window.location.hash)
 
 window.addEventListener('hashchange', () => {
   currentPath.value = window.location.hash
+  window.scrollTo(0, 0)
 })
 
 const currentView = computed(() => {
@@ -30,8 +31,16 @@ const currentView = computed(() => {
 </script>
 
 <template>
-  <Cursor />
-  <div :class="[currentPath == '#/technology' || currentPath == '#/about' ? 'blue' : 'salmon']">
+  <!-- <Cursor /> -->
+  <div
+    :class="[
+      currentPath == '#/technology' || currentPath == '#/about'
+        ? 'blue'
+        : currentPath == '#/map'
+          ? ''
+          : 'salmon',
+    ]"
+  >
     <div id="header-position">
       <StructureHeader />
     </div>
