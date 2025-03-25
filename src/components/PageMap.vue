@@ -142,7 +142,7 @@ import MapPinVar from './CompMapPinVar.vue'
   background-size: cover;
 }
 
-/* Layout des cartes */
+/* Layout des éléments */
 .box-value {
   display: flex;
   justify-content: space-between;
@@ -167,6 +167,7 @@ h2 {
   width: 480px;
   rotate: 0deg;
   transition: all 0.5s ease-in-out;
+  transform-origin: left center;
 }
 
 .box:hover h2 {
@@ -175,7 +176,7 @@ h2 {
 
 /* Titre raccourcit */
 span {
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .structure:hover .box:not(:hover) span {
@@ -215,5 +216,56 @@ span {
 #pin-tower {
   top: 30dvh;
   right: 8dvw;
+}
+
+@media (max-width: 1000px) {
+  #pin-castle {
+    top: 0dvh;
+    left: 26dvw;
+  }
+
+  #pin-licorn {
+    top: 26dvh;
+    left: 26dvw;
+  }
+
+  #pin-dragon {
+    top: 52dvh;
+    left: 26dvw;
+  }
+
+  #pin-chest {
+    top: 5dvh;
+    right: 0dvw;
+  }
+
+  #pin-trolls {
+    top: 32dvh;
+    right: 0dvw;
+  }
+
+  #pin-tower {
+    top: 54dvh;
+    right: 0dvw;
+  }
+
+  h2 {
+    width: 380px;
+  }
+
+  .box-value {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .structure:hover h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .structure {
+    flex-direction: column;
+  }
 }
 </style>

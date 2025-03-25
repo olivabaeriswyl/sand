@@ -29,6 +29,7 @@ const imageSrc = computed(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
 }
 
 img {
