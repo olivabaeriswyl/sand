@@ -253,12 +253,6 @@ span {
   }
 }
 
-@media (max-width: 576px) {
-  .structure {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 1000px) {
   #pin-castle {
     top: 0dvh;
@@ -339,6 +333,38 @@ span {
 @media (max-width: 825px) {
   .structure {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  #pin-castle {
+    top: 0dvh;
+    left: 24dvw;
+  }
+
+  #pin-licorn {
+    top: 20dvh;
+    left: 22dvw;
+  }
+
+  #pin-dragon {
+    top: 42dvh;
+    left: 22dvw;
+  }
+
+  #pin-chest {
+    top: 4dvh;
+    right: 0;
+  }
+
+  #pin-trolls {
+    top: 30dvh;
+    right: 0;
+  }
+
+  #pin-tower {
+    top: 50dvh;
+    right: 0;
   }
 }
 

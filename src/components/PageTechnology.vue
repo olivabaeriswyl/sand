@@ -4,7 +4,7 @@ import Quote from './CompQuote.vue'
 import ButtonBase from './CompButton.vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -56,6 +56,19 @@ onMounted(() => {
     console.warn("L'un des éléments n'a pas été trouvé.")
   }
 })
+
+// Background dynamique
+// onMounted(() => {
+//   gsap.to('.parallax', {
+//     backgroundPosition: 'center 50%',
+//     scrollTrigger: {
+//       trigger: '.parallax',
+//       start: 'top bottom',
+//       end: 'bottom top',
+//       scrub: 1,
+//     },
+//   })
+// })
 </script>
 
 <template>
