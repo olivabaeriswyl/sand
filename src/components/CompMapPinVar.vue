@@ -41,6 +41,7 @@ p {
   margin-bottom: 10px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  text-shadow: 0 0 6px white;
 }
 
 .map-pin:hover p {

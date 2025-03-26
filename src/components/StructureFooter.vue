@@ -50,6 +50,11 @@ footer {
   background-size: cover;
 }
 
+.no-background footer {
+  pointer-events: none;
+  display: none;
+}
+
 .salmon footer {
   padding: 300px 0 80px;
   background-image:

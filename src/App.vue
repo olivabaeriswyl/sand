@@ -8,7 +8,6 @@ import Products from './components/PageProducts.vue'
 import Technology from './components/PageTechnology.vue'
 import Map from './components/PageMap.vue'
 import About from './components/PageAbout.vue'
-import Cursor from './components/UniqueCursor.vue'
 
 const routes = {
   '/': Homepage,
@@ -31,13 +30,12 @@ const currentView = computed(() => {
 </script>
 
 <template>
-  <!-- <Cursor /> -->
   <div
     :class="[
       currentPath == '#/technology' || currentPath == '#/about'
         ? 'blue'
         : currentPath == '#/map'
-          ? ''
+          ? 'no-background'
           : 'salmon',
     ]"
   >
