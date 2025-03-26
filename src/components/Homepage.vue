@@ -47,7 +47,7 @@ import Horizontal from './UniqueHorizontal.vue'
       />
       <div class="row section-margin">
         <div class="col-lg-6 offset-lg-6">
-          <ButtonBase compButton="En savoir plus" />
+          <ButtonBase buttonLink="#/technology" compButton="En savoir plus" />
         </div>
       </div>
     </div>

@@ -1,35 +1,11 @@
 <script setup>
-// import { ref, provide } from 'vue'
-// const logoButton = ref(null)
-// provide('logoButton', logoButton)
-import { onMounted } from 'vue'
-
-const applyFilter = (element) => {
-  // Appliquer le filtre grainyEffect
-  element.style.filter = 'url(#grainyEffect)'
+const applyFilter = (event) => {
+  event.target.style.filter = 'url(#grainyEffect)'
 }
 
-const resetFilter = (element) => {
-  // Réinitialiser le filtre
-  element.style.filter = 'none'
+const removeFilter = (event) => {
+  event.target.style.filter = 'none'
 }
-
-onMounted(() => {
-  // Référence des éléments
-  const link = document.querySelector('.link')
-  const navGap = document.querySelector('#nav-end-gap')
-
-  // Appliquer et réinitialiser le filtre au hover
-  if (link) {
-    link.addEventListener('mouseenter', () => applyFilter(link))
-    link.addEventListener('mouseleave', () => resetFilter(link))
-  }
-
-  if (navGap) {
-    navGap.addEventListener('mouseenter', () => applyFilter(navGap))
-    navGap.addEventListener('mouseleave', () => resetFilter(navGap))
-  }
-})
 </script>
 
 <template>
@@ -37,26 +13,71 @@ onMounted(() => {
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <a href="#" id="logo" ref="logoButton">
-            <img src="../../public/img/logo-sand.svg" alt="SAND" />
+          <a href="#" class="hover-link" @mouseenter="applyFilter" @mouseleave="removeFilter">
+            <img id="logo" src="../../public/img/logo-sand.svg" alt="SAND" />
           </a>
         </div>
         <div class="col-lg-6">
           <nav>
             <div id="nav-gap">
-              <a href="#/technology" class="link">La technologie</a>
-              <a href="#/products" class="link">Produits et Services</a>
-              <a href="#/map" class="link">Espaces de rêve</a>
-              <a href="#/about" class="link">À Propos</a>
+              <a
+                href="#/technology"
+                class="hover-link"
+                @mouseenter="applyFilter"
+                @mouseleave="removeFilter"
+                >La technologie</a
+              >
+              <a
+                href="#/products"
+                class="hover-link"
+                @mouseenter="applyFilter"
+                @mouseleave="removeFilter"
+                >Produits et Services</a
+              >
+              <a
+                href="#/map"
+                class="hover-link"
+                @mouseenter="applyFilter"
+                @mouseleave="removeFilter"
+                >Espaces de rêve</a
+              >
+              <a
+                href="#/about"
+                class="hover-link"
+                @mouseenter="applyFilter"
+                @mouseleave="removeFilter"
+                >À Propos</a
+              >
             </div>
             <div id="nav-end-gap">
-              <a href="#/client">Espace Client</a>
-              <a href="#/sponsor">Devenir Mécène</a>
+              <a
+                href="#/client"
+                @mouseenter="applyFilter"
+                @mouseleave="removeFilter"
+                class="hover-link"
+                >Espace Client</a
+              >
+              <a
+                href="#/sponsor"
+                @mouseenter="applyFilter"
+                @mouseleave="removeFilter"
+                class="hover-link"
+                >Devenir Mécène</a
+              >
             </div>
           </nav>
         </div>
       </div>
     </div>
+
+    <svg class="filter-svg" style="display: none">
+      <defs>
+        <filter id="grainyEffect">
+          <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" />
+        </filter>
+      </defs>
+    </svg>
   </header>
 </template>
 
@@ -84,7 +105,7 @@ header {
     url(../../public/img/header-background-blue.png);
 }
 
-img {
+#logo {
   width: 180px;
 }
 
@@ -94,7 +115,7 @@ a {
   font-weight: 400;
   letter-spacing: -0.15px;
   text-decoration: none;
-  transition: filter 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-shadow: 0 0 6px white;
 }
 
@@ -113,11 +134,11 @@ a {
 
 #nav-end-gap a {
   font-weight: 700;
-  transition: filter 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-a:hover,
-#nav-end-gap a:hover {
-  filter: url(../assets/img/cursor.svg);
+.hover-link:hover {
+  scale: 1.01;
+  filter: url(#grainyEffect);
 }
 </style>

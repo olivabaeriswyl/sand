@@ -3,11 +3,19 @@ defineProps({
   compButton: String,
   buttonLink: String,
 })
+
+const applyFilter = (event) => {
+  event.target.style.filter = 'url(#grainyEffect)'
+}
+
+const removeFilter = (event) => {
+  event.target.style.filter = 'none'
+}
 </script>
 
 <template>
   <div>
-    <a :href="buttonLink">{{ compButton }}</a>
+    <a :href="buttonLink" @mouseenter="applyFilter" @mouseleave="removeFilter">{{ compButton }}</a>
   </div>
 </template>
 
@@ -28,5 +36,7 @@ a {
 a:hover {
   color: var(--color-salmon);
   background: white;
+  scale: 1.01;
+  filter: url(#grainyEffect);
 }
 </style>
