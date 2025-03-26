@@ -116,7 +116,7 @@ a {
   letter-spacing: -0.15px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
-  text-shadow: 0 0 6px white;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.526);
 }
 
 #nav-gap {

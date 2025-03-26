@@ -7,7 +7,7 @@ defineProps({
 
 <template>
   <div class="map-value">
-    <p>
+    <p id="title-value">
       <strong>{{ mapValue }}</strong>
     </p>
     <p id="text">{{ mapText }}</p>
@@ -26,5 +26,15 @@ defineProps({
 
 .map-value:hover #text {
   opacity: 1;
+}
+
+/* Titre qui rapetissit */
+#title-value {
+  transition: scale 0.5s ease-in-out;
+  transform-origin: center left;
+}
+
+.map-value:hover #title-value {
+  scale: 0.8;
 }
 </style>

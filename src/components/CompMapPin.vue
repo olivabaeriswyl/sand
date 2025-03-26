@@ -35,6 +35,7 @@ const imageSrc = computed(() => {
 img {
   width: 120px;
   height: auto;
+  transition: scale 0.5s ease-in-out;
 }
 
 p {
@@ -46,5 +47,10 @@ p {
 
 .map-pin:hover p {
   opacity: 1;
+}
+
+/* Pin qui s''agrandit' */
+.map-pin:hover img {
+  scale: 1.2;
 }
 </style>
