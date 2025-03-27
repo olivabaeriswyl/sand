@@ -4,6 +4,22 @@ import LineLayout from './CompLineLayout.vue'
 import ButtonBase from './CompButton.vue'
 import Explore from './UniqueExplore.vue'
 import Horizontal from './UniqueHorizontal.vue'
+import { gsap } from 'gsap'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  gsap.to('#animation-background-implant', {
+    scrollTrigger: {
+      trigger: '#animation-background-implant',
+      start: 'top center',
+      end: 'bottom top',
+      scrub: true,
+    },
+    backgroundPosition: '100px center',
+    ease: 'none',
+    immediateRender: false,
+  })
+})
 </script>
 
 <template>
@@ -121,7 +137,8 @@ import Horizontal from './UniqueHorizontal.vue'
   background-image:
     url(../../public/img/homepage-background-implant-white.png),
     url(../../public/img/homepage-background-implant.png);
-  background-position: center;
+  background-position: -100px center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 

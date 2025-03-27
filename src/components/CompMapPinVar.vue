@@ -49,7 +49,7 @@ p {
   opacity: 1;
 }
 
-/* Titre qui rapetissit */
+/* Pin qui s''agrandit' */
 .map-pin:hover img {
   scale: 1.2;
 }

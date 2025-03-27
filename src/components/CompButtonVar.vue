@@ -36,7 +36,7 @@ a {
 a:hover {
   color: white;
   background: var(--color-salmon);
-  scale: 1.02;
+  scale: 1.01;
   filter: url(#grainyEffect);
 }
 </style>

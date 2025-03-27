@@ -2,6 +2,39 @@
 import ButtonBase from './CompButton.vue'
 import ButtonVar from './CompButtonVar.vue'
 import Subscription from './UniqueSubscription.vue'
+import { gsap } from 'gsap'
+import { onMounted } from 'vue'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  gsap.to('#background-tools', {
+    scrollTrigger: {
+      trigger: '#background-tools',
+      start: 'top center',
+      end: 'bottom top',
+      scrub: true,
+    },
+    backgroundPositionX: '120%',
+    ease: 'none',
+    immediateRender: false,
+  })
+})
+
+onMounted(() => {
+  gsap.to('#background-service', {
+    scrollTrigger: {
+      trigger: '#background-service',
+      start: 'top center',
+      end: 'bottom top',
+      scrub: true,
+    },
+    backgroundPosition: '100px top',
+    ease: 'none',
+    immediateRender: false,
+  })
+})
 </script>
 
 <template>
@@ -124,20 +157,21 @@ import Subscription from './UniqueSubscription.vue'
 
 <style scoped>
 /* Fond */
+#background-tools {
+  background-image: url(../../public/img/products-background-tools.png);
+  background-position-x: 100%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
 #background-service {
   background-image:
     url(../../public/img/products-background-white.png),
     url(../../public/img/products-background.png);
-  background-position: top;
+  background-position: 0px top;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-#background-tools {
-  background-image: url(../../public/img/products-background-tools.png);
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: 40%;
 }
 
 /* Autre */

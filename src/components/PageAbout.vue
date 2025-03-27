@@ -3,10 +3,26 @@ import Values from './UniqueValues.vue'
 import Question from './CompQuestion.vue'
 import Quote from './CompQuote.vue'
 import ButtonBase from './CompButton.vue'
+import { gsap } from 'gsap'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  gsap.to('#background-implant', {
+    scrollTrigger: {
+      trigger: '#background-implant',
+      start: 'top center',
+      end: 'bottom top',
+      scrub: true,
+    },
+    backgroundPosition: '-100px bottom',
+    ease: 'none',
+    immediateRender: false,
+  })
+})
 </script>
 
 <template>
-  <div id="backround-implant">
+  <div id="background-implant">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -140,9 +156,9 @@ import ButtonBase from './CompButton.vue'
 }
 
 /* Fond */
-#backround-implant {
+#background-implant {
   background-image: url(../../public/img/about-background-values.png);
-  background-position: bottom;
+  background-position: 0px bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }

@@ -58,17 +58,33 @@ onMounted(() => {
 })
 
 // Background dynamique
-// onMounted(() => {
-//   gsap.to('.parallax', {
-//     backgroundPosition: 'center 50%',
-//     scrollTrigger: {
-//       trigger: '.parallax',
-//       start: 'top bottom',
-//       end: 'bottom top',
-//       scrub: 1,
-//     },
-//   })
-// })
+onMounted(() => {
+  gsap.to('#background-implant', {
+    scrollTrigger: {
+      trigger: '#background-implant',
+      start: 'top center',
+      end: 'bottom top',
+      scrub: true,
+    },
+    backgroundPosition: '100px top',
+    ease: 'none',
+    immediateRender: false,
+  })
+})
+
+onMounted(() => {
+  gsap.to('#background-confort', {
+    scrollTrigger: {
+      trigger: '#background-confort',
+      start: 'top center',
+      end: 'bottom top',
+      scrub: true,
+    },
+    backgroundPosition: '-100px bottom',
+    ease: 'none',
+    immediateRender: false,
+  })
+})
 </script>
 
 <template>
@@ -179,7 +195,7 @@ onMounted(() => {
   background-image:
     url(../../public/img/technology-background-implant-white.png),
     url(../../public/img/technology-background-implant.png);
-  background-position: top;
+  background-position: 0px top;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -188,7 +204,7 @@ onMounted(() => {
   background-image:
     url(../../public/img/technology-background-confort-white.png),
     url(../../public/img/technology-background-confort.png);
-  background-position: bottom;
+  background-position: 0px bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
