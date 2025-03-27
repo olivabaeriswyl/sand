@@ -128,14 +128,14 @@ footer {
 .salmon footer {
   padding: 300px 0 80px;
   background-image:
-    url(../../public/img/footer-background-white.png), url(../../public/img/footer-background.png);
+    url(../../public/img/footer-background-white.webp), url(../../public/img/footer-background.webp);
 }
 
 .blue footer {
   padding: 300px 0 80px;
   background-image:
-    url(../../public/img/footer-background-white.png),
-    url(../../public/img/footer-background-blue.png);
+    url(../../public/img/footer-background-white.webp),
+    url(../../public/img/footer-background-blue.webp);
 }
 
 #footer-logo {

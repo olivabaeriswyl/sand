@@ -3,7 +3,7 @@ import { computed } from 'vue'
 
 const props = defineProps({
   mapText: String,
-  icone: String, // Exemple : "map-icone-tower.png"
+  icone: String, // Exemple : "map-icone-tower.webp"
   mapPinPosition: String,
 })
 

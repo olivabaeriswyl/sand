@@ -45,7 +45,7 @@ const hoveredText = ref(false)
 
 <style scoped>
 .background {
-  background-image: url(../../public/img/homepage-explore.png);
+  background-image: url(../../public/img/homepage-explore.webp);
   background-position: bottom;
   background-size: auto 70%;
   background-repeat: no-repeat;
@@ -54,15 +54,15 @@ const hoveredText = ref(false)
 }
 
 .background.wizard {
-  background-image: url(../../public/img/homepage-explore-wizard.png);
+  background-image: url(../../public/img/homepage-explore-wizard.webp);
 }
 
 .background.travel {
-  background-image: url(../../public/img/homepage-explore-travel.png);
+  background-image: url(../../public/img/homepage-explore-travel.webp);
 }
 
 .background.peace {
-  background-image: url(../../public/img/homepage-explore-peace.png);
+  background-image: url(../../public/img/homepage-explore-peace.webp);
 }
 
 h4 {
@@ -77,7 +77,7 @@ h4 {
 
 @media (max-width: 768px) {
   .background {
-    background-image: url(../../public/img/homepage-explore-mobile.png);
+    background-image: url(../../public/img/homepage-explore-mobile.webp);
   }
 }
 </style>

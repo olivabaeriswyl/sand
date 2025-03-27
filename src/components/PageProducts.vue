@@ -52,7 +52,7 @@ onMounted(() => {
         <div class="col-sm-6 col-lg-3 implant-position">
           <img
             id="implant-size"
-            src="../../public/img/products-implant.png"
+            src="../../public/img/products-implant.webp"
             alt="Photographie de l'implant"
           />
         </div>
@@ -158,7 +158,7 @@ onMounted(() => {
 <style scoped>
 /* Fond */
 #background-tools {
-  background-image: url(../../public/img/products-background-tools.png);
+  background-image: url(../../public/img/products-background-tools.webp);
   background-position-x: 100%;
   background-position-y: center;
   background-repeat: no-repeat;
@@ -167,8 +167,8 @@ onMounted(() => {
 
 #background-service {
   background-image:
-    url(../../public/img/products-background-white.png),
-    url(../../public/img/products-background.png);
+    url(../../public/img/products-background-white.webp),
+    url(../../public/img/products-background.webp);
   background-position: 0px top;
   background-repeat: no-repeat;
   background-size: contain;

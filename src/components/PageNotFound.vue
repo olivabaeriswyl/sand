@@ -3,7 +3,7 @@
 <template>
   <div id="background-parent">
     <div id="background"></div>
-    <img src="../../public/img/map-icone-licorn.png" alt="" />
+    <img src="../../public/img/map-icone-licorn.webp" alt="" />
     <div class="container">
       <div class="row">
         <div class="col-12" id="direction">
@@ -55,15 +55,4 @@ img {
     font-size: 100px;
   }
 }
-
-/* #background {
-  background-image:
-    url(../../public/img/error-background-white.png), url(../../public/img/error-background.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-} */
 </style>

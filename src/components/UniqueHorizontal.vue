@@ -54,7 +54,7 @@ onMounted(() => {
         </div>
       </div>
       <!-- <div class="img-background"></div> -->
-      <img src="../../public/img/homepage-horizontal.png" alt="" class="horizontal-img" />
+      <img src="../../public/img/homepage-horizontal.webp" alt="" class="horizontal-img" />
     </div>
   </div>
 </template>

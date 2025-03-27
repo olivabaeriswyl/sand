@@ -52,7 +52,7 @@ onUnmounted(() => {
 <style scoped>
 #quote-background {
   background-image:
-    url(../../public/img/quote-background-white.png), url(../../public/img/quote-background.png);
+    url(../../public/img/quote-background-white.webp), url(../../public/img/quote-background.webp);
   background-position: center;
   background-size: cover;
   padding: 160px 0;
@@ -63,7 +63,7 @@ onUnmounted(() => {
 
 .blue #quote-background {
   background-image:
-    url(../../public/img/quote-background-white.png),
-    url(../../public/img/quote-background-blue.png);
+    url(../../public/img/quote-background-white.webp),
+    url(../../public/img/quote-background-blue.webp);
 }
 </style>

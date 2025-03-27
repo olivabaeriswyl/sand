@@ -95,14 +95,14 @@ header {
 .salmon header {
   padding: 60px 0 100px;
   background-image:
-    url(../../public/img/header-white-background.png), url(../../public/img/header-background.png);
+    url(../../public/img/header-white-background.webp), url(../../public/img/header-background.webp);
 }
 
 .blue header {
   padding: 60px 0 100px;
   background-image:
-    url(../../public/img/header-white-background.png),
-    url(../../public/img/header-background-blue.png);
+    url(../../public/img/header-white-background.webp),
+    url(../../public/img/header-background-blue.webp);
 }
 
 #logo {

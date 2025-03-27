@@ -9,7 +9,7 @@
         expérience extraordinaire ? Inspirés par les rêves lucides et les avancées en neurosciences,
         nous avons développé une technologie permettant à chacun de maîtriser son univers onirique.
       </p>
-      <img src="../../public/img/about-employee.png" alt="Employés qui discutent" />
+      <img src="../../public/img/about-employee.webp" alt="Employés qui discutent" />
     </div>
     <div class="box box-engagement">
       <h3>Notre engagement</h3>
@@ -18,7 +18,7 @@
         expérience extraordinaire ? Inspirés par les rêves lucides et les avancées en neurosciences,
         nous avons développé une technologie permettant à chacun de maîtriser son univers onirique.
       </p>
-      <img src="../../public/img/about-engagement.png" alt="" />
+      <img src="../../public/img/about-engagement.webp" alt="" />
     </div>
   </div>
 </template>

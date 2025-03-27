@@ -37,7 +37,7 @@ onMounted(() => {
         </div>
         <div class="col-lg-6">
           <img
-            src="../../public/img/about-scientist.png"
+            src="../../public/img/about-scientist.webp"
             alt="Scientifique passionné"
             id="img-scientist"
           />
@@ -85,7 +85,7 @@ onMounted(() => {
       </div>
       <div class="col-lg-4">
         <img
-          src="../../public/img/about-boss.png"
+          src="../../public/img/about-boss.webp"
           alt="Photographie de la directrice, souriante"
           id="img-boss"
         />
@@ -157,7 +157,7 @@ onMounted(() => {
 
 /* Fond */
 #background-implant {
-  background-image: url(../../public/img/about-background-values.png);
+  background-image: url(../../public/img/about-background-values.webp);
   background-position: 0px bottom;
   background-size: contain;
   background-repeat: no-repeat;

@@ -18,7 +18,7 @@ defineProps({
 
 <style scoped>
 #question {
-  background-image: url(../../public/img/question-blue.png);
+  background-image: url(../../public/img/question-blue.webp);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ defineProps({
 }
 
 #answer {
-  background-image: url(../../public/img/question-salmon.png);
+  background-image: url(../../public/img/question-salmon.webp);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

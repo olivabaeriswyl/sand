@@ -108,7 +108,7 @@ onMounted(() => {
             />
             <img
               id="end-implant"
-              src="../../public/img/technology-implant.png"
+              src="../../public/img/technology-implant.webp"
               alt="implant rond"
             />
           </div>
@@ -138,19 +138,31 @@ onMounted(() => {
           </p>
         </div>
         <div class="col-lg-8 schema-animation">
-          <img class="schema-img img-one" src="../../public/img/technology-schema-one.png" alt="" />
-          <img class="schema-img img-two" src="../../public/img/technology-schema-two.png" alt="" />
+          <img
+            class="schema-img img-one"
+            src="../../public/img/technology-schema-one.webp"
+            alt=""
+          />
+          <img
+            class="schema-img img-two"
+            src="../../public/img/technology-schema-two.webp"
+            alt=""
+          />
           <img
             class="schema-img img-three"
-            src="../../public/img/technology-schema-three.png"
+            src="../../public/img/technology-schema-three.webp"
             alt=""
           />
           <img
             class="schema-img img-four"
-            src="../../public/img/technology-schema-four.png"
+            src="../../public/img/technology-schema-four.webp"
             alt=""
           />
-          <img class="schema-img img-end" src="../../public/img/technology-schema-end.png" alt="" />
+          <img
+            class="schema-img img-end"
+            src="../../public/img/technology-schema-end.webp"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -193,8 +205,8 @@ onMounted(() => {
 /* Fond */
 #background-implant {
   background-image:
-    url(../../public/img/technology-background-implant-white.png),
-    url(../../public/img/technology-background-implant.png);
+    url(../../public/img/technology-background-implant-white.webp),
+    url(../../public/img/technology-background-implant.webp);
   background-position: 0px top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -202,8 +214,8 @@ onMounted(() => {
 
 #background-confort {
   background-image:
-    url(../../public/img/technology-background-confort-white.png),
-    url(../../public/img/technology-background-confort.png);
+    url(../../public/img/technology-background-confort-white.webp),
+    url(../../public/img/technology-background-confort.webp);
   background-position: 0px bottom;
   background-repeat: no-repeat;
   background-size: contain;

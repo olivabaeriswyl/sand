@@ -12,17 +12,17 @@ import MapPinVar from './CompMapPinVar.vue'
         <div class="pin-parent">
           <MapPinVar
             mapText="Grâce à l’implant SAND et à notre application intuitive, vous pouvez programmer vos rêves avant de sombrer dans le sommeil."
-            icone="map-icone-castle.png"
+            icone="map-icone-castle.webp"
             mapPinPosition="pin-castle"
           />
           <MapPin
             mapText="Définissez vos préférences : choisissez votre décor, les personnages qui vous accompagnent et le scénario que vous souhaitez vivre à l’avance."
-            icone="map-icone-licorn.png"
+            icone="map-icone-licorn.webp"
             mapPinPosition="pin-licorn"
           />
           <MapPin
             mapText="L’expérience reste immersive : une fois endormi, tout se déroule comme un rêve naturel, et vous pouvez ou non prendre conscience que vous rêvez."
-            icone="map-icone-dragon.png"
+            icone="map-icone-dragon.webp"
             mapPinPosition="pin-dragon"
           />
         </div>
@@ -49,17 +49,17 @@ import MapPinVar from './CompMapPinVar.vue'
         <div class="pin-parent">
           <MapPinVar
             mapText="La Cité des Rêves est un espace partagé où les songes des utilisateurs se mêlent et évoluent en fonction d’un scénario de base programmé par défaut."
-            icone="map-icone-chest.png"
+            icone="map-icone-chest.webp"
             mapPinPosition="pin-chest"
           />
           <MapPin
             mapText="Grâce à la Neurosphère, les implants se synchronisent pour permettre une immersion collective fluide et naturelle."
-            icone="map-icone-trolls.png"
+            icone="map-icone-trolls.webp"
             mapPinPosition="pin-trolls"
           />
           <MapPin
             mapText="Chaque rêve influence la structure et l’ambiance de la cité, la rendant dynamique et en perpétuelle transformation. Ce monde onirique évolue donc constamment selon les interactions et les créations de ses habitants."
-            icone="map-icone-tower.png"
+            icone="map-icone-tower.webp"
             mapPinPosition="pin-tower"
           />
         </div>
@@ -131,14 +131,14 @@ import MapPinVar from './CompMapPinVar.vue'
 /* Map de fond */
 .box-personal {
   left: 0;
-  background: url(../../public/img/map-blue.png), var(--color-salmon);
+  background: url(../../public/img/map-blue.webp), var(--color-salmon);
   background-position: left center;
   background-size: cover;
 }
 
 .box-city {
   right: 0;
-  background: url(../../public/img/map-salmon.png), var(--color-light-blue);
+  background: url(../../public/img/map-salmon.webp), var(--color-light-blue);
   background-position: right center;
   background-size: cover;
 }

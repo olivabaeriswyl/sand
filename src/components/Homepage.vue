@@ -20,10 +20,24 @@ onMounted(() => {
     immediateRender: false,
   })
 })
+
+onMounted(() => {
+  gsap.to('#sandman', {
+    scrollTrigger: {
+      trigger: '#sandman',
+      start: 'center center',
+      end: 'bottom top',
+      scrub: true,
+    },
+    scale: '1.4',
+    ease: 'none',
+    immediateRender: false,
+  })
+})
 </script>
 
 <template>
-  <img id="sandman" src="../../public/img/home-sandman.png" alt="" />
+  <img id="sandman" src="../../public/img/home-sandman.webp" alt="" />
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
@@ -54,7 +68,7 @@ onMounted(() => {
       />
       <div class="row">
         <div class="col-4 col-lg-2 offset-2 offset-lg-4">
-          <img class="img-inside" src="../../public/img/homepage-implant.png" alt="implant" />
+          <img class="img-inside" src="../../public/img/homepage-implant.webp" alt="implant" />
         </div>
       </div>
       <LineLayout
@@ -135,8 +149,8 @@ onMounted(() => {
 /* Présentation implant */
 #animation-background-implant {
   background-image:
-    url(../../public/img/homepage-background-implant-white.png),
-    url(../../public/img/homepage-background-implant.png);
+    url(../../public/img/homepage-background-implant-white.webp),
+    url(../../public/img/homepage-background-implant.webp);
   background-position: -100px center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,6 +163,7 @@ onMounted(() => {
   position: absolute;
   max-width: 100%;
   top: -180px;
+  scale: 1;
 }
 
 /* Autre */
